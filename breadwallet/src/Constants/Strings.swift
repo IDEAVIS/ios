@@ -21,11 +21,11 @@ enum S {
             case 2:
                 return "photons\(S.Symbols.narrowSpace)(m\(S.Symbols.bits))"
             case 5:
-                return "lites\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
+                return "primes\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
             case 8:
-                return "LTC\(S.Symbols.narrowSpace)(\(S.Symbols.btc))"
+                return "PM\(S.Symbols.narrowSpace)(\(S.Symbols.btc))"
             default:
-                return "lites\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
+                return "primes\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
             }
         }
     }
@@ -575,6 +575,6 @@ enum S {
 
     enum Welcome {
         static let title = NSLocalizedString("Welcome.title", value: "Welcome to PrimusWallet!", comment: "Welcome view title")
-        static let body = NSLocalizedString("Welcome.body", value: "PrimusWallet now has a brand new look and some new features.\n\nIf you need help, look for the (?) in the top right of most screens. All coins are displayed in lites (ł). 1 Primuscoin (Ł) = 1000 lites (ł).", comment: "Welcome view body text")
+        static let body = NSLocalizedString("Welcome.body", value: "PrimusWallet now has a brand new look and some new features.\n\nIf you need help, look for the (?) in the top right of most screens. All coins are displayed in primes (ł). 1 Primuscoin (Ł) = 1000 primes (ł).", comment: "Welcome view body text")
     }
 }

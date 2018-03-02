@@ -95,7 +95,7 @@ class Transaction {
             nf.currencySymbol = currentRate.currencySymbol
             nf.numberStyle = .currency
             if let rateString = nf.string(from: metaData.exchangeRate as NSNumber) {
-                let secondLine = "\(rateString)/LTC \(prefix)\(String(format: "%.2f", difference))%"
+                let secondLine = "\(rateString)/PM \(prefix)\(String(format: "%.2f", difference))%"
                 exchangeRateInfo = "\(firstLine)\n\(secondLine)"
             }
         }
@@ -118,7 +118,7 @@ class Transaction {
     private let wallet: BRWallet
     fileprivate let satoshis: UInt64
     private var kvStore: BRReplicatedKVStore?
-    
+
     lazy var toAddress: String? = {
         switch self.direction {
         case .sent:

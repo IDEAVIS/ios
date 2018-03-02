@@ -34,7 +34,7 @@ struct C {
     static let maxMoney: UInt64 = 84000000*100000000
     static let satoshis: UInt64 = 100000000
     static let walletQueue = "com.litecoin.walletqueue"
-    static let btcCurrencyCode = "LTC"
+    static let btcCurrencyCode = "PM"
     static let null = "(null)"
     static let maxMemoLength = 250
     static let feedbackEmail = "contact@loafwallet.org"

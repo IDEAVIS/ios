@@ -14,7 +14,7 @@ struct Amount {
     let amount: UInt64 //amount in satoshis
     let rate: Rate
     let maxDigits: Int
-    
+
     var amountForBtcFormat: Double {
         var decimal = Decimal(self.amount)
         var amount: Decimal = 0.0
@@ -61,13 +61,13 @@ struct Amount {
         format.numberStyle = .currency
         format.generatesDecimalNumbers = true
         format.negativeFormat = format.positiveFormat.replacingCharacters(in: format.positiveFormat.range(of: "#")!, with: "-#")
-        format.currencyCode = "LTC"
+        format.currencyCode = "PM"
 
         switch maxDigits {
         case 2: // photons
             format.currencySymbol = "m\(S.Symbols.bits)\(S.Symbols.narrowSpace)"
             format.maximum = (C.maxMoney/C.satoshis)*100000 as NSNumber
-        case 5: // lites
+        case 5: // primes
             format.currencySymbol = "\(S.Symbols.bits)\(S.Symbols.narrowSpace)"
             format.maximum = (C.maxMoney/C.satoshis)*1000 as NSNumber
         case 8: // litecoin
@@ -147,7 +147,7 @@ struct DisplayAmount {
         format.numberStyle = .currency
         format.generatesDecimalNumbers = true
         format.negativeFormat = format.positiveFormat.replacingCharacters(in: format.positiveFormat.range(of: "#")!, with: "-#")
-        format.currencyCode = "LTC"
+        format.currencyCode = "PM"
 
         switch state.maxDigits {
         case 2:

@@ -68,8 +68,8 @@ extension UserDefaults {
 
     //
     // 2 - photons
-    // 5 - lites
-    // 8 - LTC
+    // 5 - primes
+    // 8 - PM
     //
     static var maxDigits: Int {
         get {
@@ -78,7 +78,7 @@ extension UserDefaults {
             }
             let maxDigits = defaults.integer(forKey: maxDigitsKey)
             if maxDigits == 5 {
-                return 8 //Convert lites to LTC
+                return 8 //Convert primes to PM
             } else {
                 return maxDigits
             }
