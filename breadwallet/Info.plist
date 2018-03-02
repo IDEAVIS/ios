@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>LoafWallet</string>
+	<string>PrimusWallet</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -70,7 +70,7 @@
 			<string>com.litecoin.loafwallet</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>loaf</string>
+				<string>primus</string>
 			</array>
 		</dict>
 		<dict>

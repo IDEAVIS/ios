@@ -34,7 +34,7 @@ let BRAPIClientErrorDomain = "BRApiClientErrorDomain"
 @objc public enum BRFeatureFlags : Int, CustomStringConvertible {
     case buyBitcoin
     case earlyAccess
-    
+
     public var description: String {
         switch self {
         case .buyBitcoin: return "buy-bitcoin";
@@ -58,31 +58,31 @@ public protocol BRAPIAdaptor {
         _ request: URLRequest, authenticated: Bool, retryCount: Int,
         handler: @escaping URLSessionTaskHandler
     ) -> URLSessionDataTask
-    
+
     func url(_ path: String, args: Dictionary<String, String>?) -> URL
 }
 
 open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, BRAPIAdaptor {
     private var authenticator: WalletAuthenticator
-    
+
     // whether or not to emit log messages from this instance of the client
     private var logEnabled = true
-    
+
     // proto is the transport protocol to use for talking to the API (either http or https)
     var proto = "https"
-    
+
     // host is the server(s) on which the API is hosted
     #if Testflight || Debug
     var host = "api.loafwallet.org" // GitHub Pages currently doesn't support more than one domain per repo
     #else
     var host = "api.loafwallet.org"
     #endif
-    
+
     // isFetchingAuth is set to true when a request is currently trying to renew authentication (the token)
     // it is useful because fetching auth is not idempotent and not reentrant, so at most one auth attempt
     // can take place at any one time
     private var isFetchingAuth = false
-    
+
     // used when requests are waiting for authentication to be fetched
     private var authFetchGroup = DispatchGroup()
 
@@ -91,16 +91,16 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
 
     // the queue on which the NSURLSession operates
     private var queue = OperationQueue()
-    
+
     // convenience getter for the API endpoint
     private var baseUrl: String {
         return "\(proto)://\(host)"
     }
-    
+
     init(authenticator: WalletAuthenticator) {
         self.authenticator = authenticator
     }
-    
+
     // prints whatever you give it if logEnabled is true
     func log(_ s: String) {
         if !logEnabled {
@@ -108,16 +108,16 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
         }
         print("[BRAPIClient] \(s)")
     }
-    
+
     var deviceId: String {
         return UserDefaults.standard.deviceID
     }
-    
+
     var authKey: BRKey? {
         if authenticator.noWallet { return nil }
         guard let keyStr = authenticator.apiAuthKey else { return nil }
         var key = BRKey()
-        key.compressed = 1 
+        key.compressed = 1
         if BRKeySetPrivKey(&key, keyStr) == 0 {
             #if DEBUG
                 fatalError("Unable to decode private key")
@@ -125,15 +125,15 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
         }
         return key
     }
-    
+
     // MARK: Networking functions
-    
+
     // Constructs a full NSURL for a given path and url parameters
     public func url(_ path: String, args: Dictionary<String, String>? =  nil) -> URL {
         func joinPath(_ k: String...) -> URL {
             return URL(string: ([baseUrl] + k).joined(separator: ""))!
         }
-        
+
         if let args = args {
             return joinPath(path + "?" + args.map({
                 "\($0.0.urlEscapedString)=\($0.1.urlEscapedString)"
@@ -155,12 +155,12 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
             let authKey = authKey,
             let signingData = mutableRequest.signingString.data(using: .utf8) {
             let sig = signingData.sha256_2.compactSign(key: authKey)
-            let hval = "LoafWallet \(token):\(sig.base58)"
+            let hval = "PrimusWallet \(token):\(sig.base58)"
             mutableRequest.setValue(hval, forHTTPHeaderField: "Authorization")
         }
         return mutableRequest
     }
-    
+
     private func decorateRequest(_ request: URLRequest) -> URLRequest {
         var actualRequest = request
         actualRequest.setValue("\(E.isTestnet ? 1 : 0)", forHTTPHeaderField: "X-Litecoin-Testnet")
@@ -168,7 +168,7 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
         actualRequest.setValue(Locale.current.identifier, forHTTPHeaderField: "Accept-Language")
         return actualRequest
     }
-    
+
     public func dataTaskWithRequest(_ request: URLRequest, authenticated: Bool = false,
                              retryCount: Int = 0, handler: @escaping URLSessionTaskHandler) -> URLSessionDataTask {
         let start = Date()
@@ -176,7 +176,7 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
         if let meth = request.httpMethod, let u = request.url {
             logLine = "\(meth) \(u) auth=\(authenticated) retry=\(retryCount)"
         }
-        
+
         // copy the request and authenticate it. retain the original request for retries
         var actualRequest = decorateRequest(request)
         if authenticated {
@@ -193,9 +193,9 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
                             errStr = s
                         }
                     }
-                    
+
                     self.log("\(logLine) -> status=\(httpResp.statusCode) duration=\(dur)ms errStr=\(errStr)")
-                    
+
                     if authenticated && httpResp.isBreadChallenge {
                         self.log("\(logLine) got authentication challenge from API - will attempt to get token")
                         self.getToken { err in
@@ -228,9 +228,9 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
                     handler(data, nil, err as NSError?)
                 }
             }
-        }) 
+        })
     }
-    
+
     // retrieve a token and save it in the keychain data for this account
     private func getToken(_ handler: @escaping (NSError?) -> Void) {
         if isFetchingAuth {
@@ -303,7 +303,7 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
             }
         }) .resume()
     }
-    
+
     // MARK: URLSession Delegate
 
     public func urlSession(_ session: URLSession, task: URLSessionTask, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
@@ -318,7 +318,7 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
             }
         }
     }
-    
+
     public func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest, completionHandler: @escaping (URLRequest?) -> Void) {
         var actualRequest = request
         if let currentReq = task.currentRequest, var curHost = currentReq.url?.host, let curScheme = currentReq.url?.scheme {
@@ -329,7 +329,7 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
                 // follow the redirect if we're interacting with our API
                 actualRequest = decorateRequest(request)
                 log("redirecting \(String(describing: currentReq.url)) to \(String(describing: request.url))")
-                if let curAuth = currentReq.allHTTPHeaderFields?["Authorization"], curAuth.hasPrefix("LoafWallet") {
+                if let curAuth = currentReq.allHTTPHeaderFields?["Authorization"], curAuth.hasPrefix("PrimusWallet") {
                     // add authentication because the previous request was authenticated
                     log("adding authentication to redirected request")
                     actualRequest = signRequest(actualRequest)
@@ -382,7 +382,7 @@ fileprivate extension HTTPURLResponse {
     var isBreadChallenge: Bool {
         if let headers = allHeaderFields as? [String: String],
             let challenge = headers.get(lowercasedKey: "www-authenticate") {
-            if challenge.lowercased().hasPrefix("LoafWallet") {
+            if challenge.lowercased().hasPrefix("PrimusWallet") {
                 return true
             }
         }
