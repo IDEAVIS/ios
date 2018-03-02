@@ -1761,7 +1761,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BBAEBE51F80237B0047DEA8 /* loafwallet-core */ = {
+		1BBAEBE51F80237B0047DEA8 /* primuswallet-core */ = {
 			isa = PBXGroup;
 			children = (
 				1BBAEBE81F80237B0047DEA8 /* BRAddress.c */,
@@ -1802,8 +1802,8 @@
 				1BBAEC0C1F80237B0047DEA8 /* secp256k1 */,
 				1BBAEC711F80237C0047DEA8 /* test.c */,
 			);
-			name = "loafwallet-core";
-			path = "Modules/loafwallet-core";
+			name = "primuswallet-core";
+			path = "Modules/primuswallet-core";
 			sourceTree = "<group>";
 		};
 		1BBAEC0C1F80237B0047DEA8 /* secp256k1 */ = {
@@ -2974,7 +2974,7 @@
 		75B6F52F1DA71DCC0031A93F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1BBAEBE51F80237B0047DEA8 /* loafwallet-core */,
+				1BBAEBE51F80237B0047DEA8 /* primuswallet-core */,
 				22A9A9971DF63426000F0016 /* libbz2 */,
 				755CD3831DAA0E3E0075898E /* unbound */,
 				755CD7031DAA16810075898E /* nettle */,
@@ -3362,7 +3362,7 @@
 /* Begin PBXLegacyTarget section */
 		759DA0D71DAC8668008CC49B /* submodules */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "-c 'git submodule init && git submodule update && git -C Modules/loafwallet-core submodule init && git -C Modules/loafwallet-core submodule update'";
+			buildArgumentsString = "-c 'git submodule init && git submodule update && git -C Modules/primuswallet-core submodule init && git -C Modules/primuswallet-core submodule update'";
 			buildConfigurationList = 759DA0DA1DAC8668008CC49B /* Build configuration list for PBXLegacyTarget "submodules" */;
 			buildPhases = (
 			);
@@ -4687,8 +4687,8 @@
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/loafwallet-core",
-					"${SRCROOT}/Modules/loafwallet-core/secp256k1",
+					"${SRCROOT}/Modules/primuswallet-core",
+					"${SRCROOT}/Modules/primuswallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -4701,8 +4701,8 @@
 				CLANG_WARN_COMMA = NO;
 				DEVELOPMENT_TEAM = FAPFEJXE9S;
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/loafwallet-core",
-					"${SRCROOT}/Modules/loafwallet-core/secp256k1",
+					"${SRCROOT}/Modules/primuswallet-core",
+					"${SRCROOT}/Modules/primuswallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -5364,8 +5364,8 @@
 					"BITCOIN_TESTNET=1",
 				);
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/loafwallet-core",
-					"${SRCROOT}/Modules/loafwallet-core/secp256k1",
+					"${SRCROOT}/Modules/primuswallet-core",
+					"${SRCROOT}/Modules/primuswallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -5666,8 +5666,8 @@
 					"BITCOIN_TESTNET=1",
 				);
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/loafwallet-core",
-					"${SRCROOT}/Modules/loafwallet-core/secp256k1",
+					"${SRCROOT}/Modules/primuswallet-core",
+					"${SRCROOT}/Modules/primuswallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -5955,8 +5955,8 @@
 				CLANG_WARN_COMMA = NO;
 				DEVELOPMENT_TEAM = FAPFEJXE9S;
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/loafwallet-core",
-					"${SRCROOT}/Modules/loafwallet-core/secp256k1",
+					"${SRCROOT}/Modules/primuswallet-core",
+					"${SRCROOT}/Modules/primuswallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
