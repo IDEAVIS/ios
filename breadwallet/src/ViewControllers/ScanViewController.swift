@@ -66,28 +66,28 @@ class ScanViewController : UIViewController, Trackable {
         toolbar.constrainBottomCorners(sidePadding: 0, bottomPadding: 0)
         if E.isIPhoneX {
             toolbar.constrain([ toolbar.constraint(.height, constant: 60.0) ])
-            
+
             close.constrain([
                 close.constraint(.leading, toView: toolbar),
                 close.constraint(.top, toView: toolbar, constant: 2.0),
                 close.constraint(.width, constant: 44.0),
                 close.constraint(.height, constant: 44.0) ])
-            
+
             flash.constrain([
                 flash.constraint(.trailing, toView: toolbar),
                 flash.constraint(.top, toView: toolbar, constant: 2.0),
                 flash.constraint(.width, constant: 44.0),
                 flash.constraint(.height, constant: 44.0) ])
-            
+
         } else {
             toolbar.constrain([ toolbar.constraint(.height, constant: 48.0) ])
-            
+
             close.constrain([
                 close.constraint(.leading, toView: toolbar),
                 close.constraint(.top, toView: toolbar, constant: 2.0),
                 close.constraint(.bottom, toView: toolbar, constant: -2.0),
                 close.constraint(.width, constant: 44.0) ])
-            
+
             flash.constrain([
                 flash.constraint(.trailing, toView: toolbar),
                 flash.constraint(.top, toView: toolbar, constant: 2.0),
@@ -192,7 +192,7 @@ extension ScanViewController : AVCaptureMetadataOutputObjectsDelegate {
         if self.currentUri != uri {
             self.currentUri = uri
             if let paymentRequest = PaymentRequest(string: uri) {
-                saveEvent("scan.litecoinUri")
+                saveEvent("scan.primuscoinUri")
                 guide.state = .positive
                 //Add a small delay so the green guide will be seen
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {

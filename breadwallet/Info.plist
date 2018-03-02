@@ -12,30 +12,30 @@
 			<key>CFBundleTypeIconFiles</key>
 			<array/>
 			<key>CFBundleTypeName</key>
-			<string>Litecoin Payment Request</string>
+			<string>Primuscoin Payment Request</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>litecoin.paymentrequest</string>
+				<string>primuscoin.paymentrequest</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeIconFiles</key>
 			<array/>
 			<key>CFBundleTypeName</key>
-			<string>Litecoin Payment</string>
+			<string>Primuscoin Payment</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>litecoin.payment</string>
+				<string>primuscoin.payment</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeIconFiles</key>
 			<array/>
 			<key>CFBundleTypeName</key>
-			<string>Litecoin Payment ACK</string>
+			<string>Primuscoin Payment ACK</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>litecoin.paymentack</string>
+				<string>primuscoin.paymentack</string>
 			</array>
 		</dict>
 	</array>
@@ -60,7 +60,7 @@
 			<string>litecoin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>litecoin</string>
+				<string>primuscoin</string>
 			</array>
 		</dict>
 		<dict>
@@ -145,13 +145,13 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Litecoin Payment Request</string>
+			<string>Primuscoin Payment Request</string>
 			<key>UTTypeIdentifier</key>
-			<string>litecoin.paymentrequest</string>
+			<string>primuscoin.paymentrequest</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/litecoin-paymentrequest</string>
+				<string>application/primuscoin-paymentrequest</string>
 			</dict>
 		</dict>
 		<dict>
@@ -160,13 +160,13 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Litecoin Payment</string>
+			<string>Primuscoin Payment</string>
 			<key>UTTypeIdentifier</key>
-			<string>litecoin.payment</string>
+			<string>primuscoin.payment</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/litecoin-payment</string>
+				<string>application/primuscoin-payment</string>
 			</dict>
 		</dict>
 		<dict>
@@ -175,13 +175,13 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Litecoin Payment ACK</string>
+			<string>Primuscoin Payment ACK</string>
 			<key>UTTypeIdentifier</key>
-			<string>litecoin.paymentack</string>
+			<string>primuscoin.paymentack</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/litecoin-paymentack</string>
+				<string>application/primuscoin-paymentack</string>
 			</dict>
 		</dict>
 	</array>
