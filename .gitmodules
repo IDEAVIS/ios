@@ -6,4 +6,4 @@
 	url = https://github.com/breadwallet/nettle.git
 [submodule "Modules/primuswallet-core"]
 	path = Modules/primuswallet-core
-  url = git@git.volatileio.com:primus/wallet-core.git
+	url = git@git.volatileio.com:primus/wallet-core.git
