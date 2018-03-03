@@ -67,7 +67,7 @@ extension UserDefaults {
     }
 
     //
-    // 2 - photons
+    // 2 - subprimes
     // 5 - primes
     // 8 - PM
     //
