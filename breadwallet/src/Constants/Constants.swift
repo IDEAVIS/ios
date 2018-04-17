@@ -1,9 +1,9 @@
 //
 //  Constants.swift
-//  breadwallet
+//  piwallet
 //
 //  Created by Adrian Corscadden on 2016-10-24.
-//  Copyright © 2016 breadwallet LLC. All rights reserved.
+//  Copyright © 2016 piwallet LLC. All rights reserved.
 //
 
 import UIKit
@@ -37,8 +37,8 @@ struct C {
     static let btcCurrencyCode = "PM"
     static let null = "(null)"
     static let maxMemoLength = 250
-    static let feedbackEmail = "contact@loafwallet.org"
-    static let reviewLink = "https://itunes.apple.com/app/loafwallet-litecoin-wallet/id1119332592?action=write-review"
+    static let feedbackEmail = "piwallet@primuscoin.com"
+    static let reviewLink = "https://primuscoin.com"
     static var standardPort: Int {
         return E.isTestnet ? 19335 : 9333
     }

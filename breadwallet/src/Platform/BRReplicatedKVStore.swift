@@ -1,9 +1,9 @@
 //
 //  BRReplicatedKVStore.swift
-//  BreadWallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 8/10/16.
-//  Copyright © 2016 breadwallet LLC. All rights reserved.
+//  Copyright © 2016 piwallet LLC. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal

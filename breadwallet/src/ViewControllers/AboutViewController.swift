@@ -1,9 +1,9 @@
 //
 //  AboutViewController.swift
-//  breadwallet
+//  piwallet
 //
 //  Created by Adrian Corscadden on 2017-04-05.
-//  Copyright © 2017 breadwallet LLC. All rights reserved.
+//  Copyright © 2017 piwallet LLC. All rights reserved.
 //
 
 import UIKit
@@ -80,7 +80,7 @@ class AboutViewController : UIViewController {
 
     private func setActions() {
         blog.button.tap = strongify(self) { myself in
-            myself.presentURL(string: "https://loafwallet.org")
+            myself.presentURL(string: "https://piwallet.primuscoin.com")
         }
         twitter.button.tap = strongify(self) { myself in
             myself.presentURL(string: "https://twitter.com/LTCFoundation")

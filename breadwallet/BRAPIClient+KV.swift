@@ -1,9 +1,9 @@
 //
 //  BRAPIClient+KV.swift
-//  breadwallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 4/1/17.
-//  Copyright © 2017 breadwallet LLC. All rights reserved.
+//  Copyright © 2017 piwallet LLC. All rights reserved.
 //
 
 import Foundation

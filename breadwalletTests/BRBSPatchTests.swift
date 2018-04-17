@@ -1,13 +1,13 @@
 //
 //  BRBSPatchTests.swift
-//  breadwallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 12/7/16.
-//  Copyright © 2016 breadwallet LLC. All rights reserved.
+//  Copyright © 2016 piwallet LLC. All rights reserved.
 //
 
 import XCTest
-@testable import breadwallet
+@testable import piwallet
 
 class BRBSPatchTests: XCTestCase {
     var bundle1Url: URL?
@@ -35,9 +35,9 @@ class BRBSPatchTests: XCTestCase {
                 XCTFail("error downloading file")
             }
         }
-        download("https://s3.amazonaws.com/breadwallet-assets/bread-buy/bundle.tar", resultingUrl: &bundle1Url)
-        download("https://s3.amazonaws.com/breadwallet-assets/bread-buy/bundle2.tar", resultingUrl: &bundle2Url)
-        download("https://s3.amazonaws.com/breadwallet-assets/bread-buy/bundle_bundle2.bspatch", resultingUrl: &patchUrl)
+        download("https://s3.amazonaws.com/piwallet-assets/bread-buy/bundle.tar", resultingUrl: &bundle1Url)
+        download("https://s3.amazonaws.com/piwallet-assets/bread-buy/bundle2.tar", resultingUrl: &bundle2Url)
+        download("https://s3.amazonaws.com/piwallet-assets/bread-buy/bundle_bundle2.bspatch", resultingUrl: &patchUrl)
         super.setUp()
     }
     

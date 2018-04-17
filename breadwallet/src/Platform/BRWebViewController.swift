@@ -1,9 +1,9 @@
 //
 //  BRWebViewController.swift
-//  BreadWallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 12/10/15.
-//  Copyright (c) 2016 breadwallet LLC
+//  Copyright (c) 2016 piwallet LLC
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -69,12 +69,12 @@ import WebKit
         switch mountPoint {
         // MARK (losh11): - cleanup switch below
             case "/buy":
-                let addr = "https://api.loafwallet.org/buy?address=" + (walletManager.wallet?.receiveAddress)!
+                let addr = "https://api.piwallet.primuscoin.com/buy?address=" + (walletManager.wallet?.receiveAddress)!
                 return URL(string: addr)!
             case "/support":
-                return URL(string: "https://api.loafwallet.org/support")!
+                return URL(string: "https://api.piwallet.primuscoin.com/support")!
             case "/ea":
-                return URL(string: "https://api.loafwallet.org/ea")!
+                return URL(string: "https://api.piwallet.primuscoin.com/ea")!
             default:
                 return URL(string: "http://127.0.0.1:\(server.port)\(mountPoint)")!
         }
@@ -373,7 +373,7 @@ import WebKit
         //MARK (losh11): - improve code which closes webView
         if let url = navigationAction.request.url?.absoluteString{
             let mutableurl = url
-            if mutableurl == "https://api.loafwallet.org/close" {
+            if mutableurl == "https://api.piwallet.primuscoin.com/close" {
                 DispatchQueue.main.async {
                     self.closeNow()
                 }

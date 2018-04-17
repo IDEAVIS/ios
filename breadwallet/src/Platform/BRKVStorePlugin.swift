@@ -1,6 +1,6 @@
 //
 //  BRKVStorePlugin.swift
-//  BreadWallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 8/18/16.
 //  Copyright © 2016 breawallet LLC. All rights reserved.

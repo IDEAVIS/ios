@@ -1,9 +1,9 @@
 //
 //  BRSocketHelpers.c
-//  BreadWallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 2/17/16.
-//  Copyright (c) 2016 breadwallet LLC
+//  Copyright (c) 2016 piwallet LLC
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal

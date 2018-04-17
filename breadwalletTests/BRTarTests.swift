@@ -1,13 +1,13 @@
 //
 //  BRTarTests.swift
-//  breadwallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 12/7/16.
-//  Copyright © 2016 breadwallet LLC. All rights reserved.
+//  Copyright © 2016 piwallet LLC. All rights reserved.
 //
 
 import XCTest
-@testable import breadwallet
+@testable import piwallet
 
 class BRTarTests: XCTestCase {
     var fileUrl: URL?
@@ -15,7 +15,7 @@ class BRTarTests: XCTestCase {
     override func setUp() {
         // download a test tar file
         let fm = FileManager.default
-        let url = URL(string: "https://s3.amazonaws.com/breadwallet-assets/bread-buy/7f5bc5c6cc005df224a6ea4567e508491acaffdc2e4769e5262a52f5b785e261.tar")!
+        let url = URL(string: "https://s3.amazonaws.com/piwallet-assets/bread-buy/7f5bc5c6cc005df224a6ea4567e508491acaffdc2e4769e5262a52f5b785e261.tar")!
         let documentsUrl =  fm.urls(for: .documentDirectory, in: .userDomainMask).first!
         let destinationUrl = documentsUrl.appendingPathComponent(url.lastPathComponent)
         if fm.fileExists(atPath: destinationUrl.path) {

@@ -1,9 +1,9 @@
 //
 //  BRAPIClient.swift
-//  BreadWallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 11/4/15.
-//  Copyright (c) 2016 breadwallet LLC
+//  Copyright (c) 2016 piwallet LLC
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -73,9 +73,9 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
 
     // host is the server(s) on which the API is hosted
     #if Testflight || Debug
-    var host = "api.loafwallet.org" // GitHub Pages currently doesn't support more than one domain per repo
+    var host = "api.piwallet.primuscoin.com" // GitHub Pages currently doesn't support more than one domain per repo
     #else
-    var host = "api.loafwallet.org"
+    var host = "api.piwallet.primuscoin.com"
     #endif
 
     // isFetchingAuth is set to true when a request is currently trying to renew authentication (the token)

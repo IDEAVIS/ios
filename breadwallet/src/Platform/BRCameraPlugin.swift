@@ -1,6 +1,6 @@
 //
 //  BRCameraPlugin.swift
-//  BreadWallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 10/9/16.
 //  Copyright © 2016 Aaron Voisine. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  BRCoding.swift
-//  BreadWallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 8/14/16.
 //  Copyright © 2016 Aaron Voisine. All rights reserved.

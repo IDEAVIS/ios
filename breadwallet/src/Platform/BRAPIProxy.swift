@@ -1,9 +1,9 @@
 //
 //  BRAPIProxy.swift
-//  BreadWallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 2/8/16.
-//  Copyright (c) 2016 breadwallet LLC
+//  Copyright (c) 2016 piwallet LLC
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +25,7 @@
 
 import Foundation
 
-// Add this middleware to a BRHTTPServer to expose a proxy to the breadwallet HTTP api
+// Add this middleware to a BRHTTPServer to expose a proxy to the piwallet HTTP api
 // It has all the capabilities of the real API but with the ability to authenticate 
 // requests using the users private keys stored on device.
 //

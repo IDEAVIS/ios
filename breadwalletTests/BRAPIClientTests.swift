@@ -1,13 +1,13 @@
 //
 //  BRAPIClientTests.swift
-//  breadwallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 12/7/16.
-//  Copyright © 2016 breadwallet LLC. All rights reserved.
+//  Copyright © 2016 piwallet LLC. All rights reserved.
 //
 
 import XCTest
-@testable import breadwallet
+@testable import piwallet
 import BRCore
 
 class FakeAuthenticator: WalletAuthenticator {
@@ -45,7 +45,7 @@ class FakeAuthenticator: WalletAuthenticator {
     }
 }
 
-// This test will test against the live API at api.breadwallet.com
+// This test will test against the live API at api.piwallet.com
 class BRAPIClientTests: XCTestCase {
     var authenticator: WalletAuthenticator!
     var client: BRAPIClient!

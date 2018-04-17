@@ -1,9 +1,9 @@
 //
 //  SearchHeaderView.swift
-//  breadwallet
+//  piwallet
 //
 //  Created by Adrian Corscadden on 2017-05-02.
-//  Copyright © 2017 breadwallet LLC. All rights reserved.
+//  Copyright © 2017 piwallet LLC. All rights reserved.
 //
 
 import UIKit

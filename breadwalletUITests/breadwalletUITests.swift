@@ -1,14 +1,14 @@
 //
-//  breadwalletUITests.swift
-//  breadwalletUITests
+//  piwalletUITests.swift
+//  piwalletUITests
 //
 //  Created by ajv on 10/5/16.
-//  Copyright © 2016 breadwallet LLC. All rights reserved.
+//  Copyright © 2016 piwallet LLC. All rights reserved.
 //
 
 import XCTest
 
-class breadwalletUITests: XCTestCase {
+class piwalletUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

@@ -1,6 +1,6 @@
 //
 //  BRBrowserViewController.swift
-//  BreadWallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 6/23/17.
 //  Copyright © 2017 Aaron Voisine. All rights reserved.

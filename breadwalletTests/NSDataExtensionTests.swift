@@ -1,13 +1,13 @@
 //
 //  NSDataExtensionTests.swift
-//  breadwallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 12/7/16.
-//  Copyright © 2016 breadwallet LLC. All rights reserved.
+//  Copyright © 2016 piwallet LLC. All rights reserved.
 //
 
 import XCTest
-@testable import breadwallet
+@testable import piwallet
 
 class NSDataExtensionTests: XCTestCase {
     override func setUp() {

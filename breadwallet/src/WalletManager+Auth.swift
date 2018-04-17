@@ -1,9 +1,9 @@
 //
 //  WalletManager+Auth.swift
-//  breadwallet
+//  piwallet
 //
 //  Created by Aaron Voisine on 11/7/16.
-//  Copyright (c) 2016 breadwallet LLC
+//  Copyright (c) 2016 piwallet LLC
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -505,7 +505,7 @@ extension WalletManager : WalletAuthenticator {
         public static let pinFailCount = "pinfailcount"
         public static let pinFailTime = "pinfailheight"
         public static let apiAuthKey = "authprivkey"
-        public static let userAccount = "https://api.breadwallet.com"
+        public static let userAccount = "https://api.piwallet.com"
         public static let seed = "seed" // deprecated
     }
     

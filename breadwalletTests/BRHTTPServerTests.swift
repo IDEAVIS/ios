@@ -1,13 +1,13 @@
 //
 //  BRHTTPServerTests.swift
-//  breadwallet
+//  piwallet
 //
 //  Created by Samuel Sutch on 12/7/16.
-//  Copyright © 2016 breadwallet LLC. All rights reserved.
+//  Copyright © 2016 piwallet LLC. All rights reserved.
 //
 
 import XCTest
-@testable import breadwallet
+@testable import piwallet
 
 class BRHTTPServerTests: XCTestCase {
     var server: BRHTTPServer!
@@ -39,7 +39,7 @@ class BRHTTPServerTests: XCTestCase {
                 XCTFail("error downloading file")
             }
         }
-        download("https://s3.amazonaws.com/breadwallet-assets/bread-buy/bundle.tar",
+        download("https://s3.amazonaws.com/piwallet-assets/bread-buy/bundle.tar",
                  resultingUrl: &bundle1Url, resultingData: &bundle1Data)
         
         server = BRHTTPServer()
