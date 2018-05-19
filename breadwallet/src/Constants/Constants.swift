@@ -33,7 +33,7 @@ struct C {
     static let secondsInDay: TimeInterval = 86400
     static let maxMoney: UInt64 = 84000000*100000000
     static let satoshis: UInt64 = 100000000
-    static let walletQueue = "com.litecoin.walletqueue"
+    static let walletQueue = "com.primuscoin.walletqueue"
     static let btcCurrencyCode = "PM"
     static let null = "(null)"
     static let maxMemoLength = 250
