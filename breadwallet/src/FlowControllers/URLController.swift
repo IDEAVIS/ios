@@ -62,7 +62,7 @@ class URLController : Trackable {
                 return handleBitcoinUri(uri)
             }
             return true
-        case "primuscoin":
+        case "ideaviscoin":
             return handleBitcoinUri(url)
         case "bitid":
             if BRBitID.isBitIDURL(url) {
@@ -77,7 +77,7 @@ class URLController : Trackable {
     private func isBitcoinUri(url: URL, uri: String?) -> URL? {
         guard let uri = uri else { return nil }
         guard let bitcoinUrl = URL(string: uri) else { return nil }
-        if (url.host == "primuscoin-uri" || url.path == "/primuscoin-uri") && bitcoinUrl.scheme == "primuscoin" {
+        if (url.host == "ideaviscoin-uri" || url.path == "/ideaviscoin-uri") && bitcoinUrl.scheme == "ideaviscoin" {
             return url
         } else {
             return nil

@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>PrimusWallet</string>
+	<string>IdeavisWallet</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -15,7 +15,7 @@
 			<string>Primuscoin Payment Request</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>primuscoin.paymentrequest</string>
+				<string>ideaviscoin.paymentrequest</string>
 			</array>
 		</dict>
 		<dict>
@@ -25,7 +25,7 @@
 			<string>Primuscoin Payment</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>primuscoin.payment</string>
+				<string>ideaviscoin.payment</string>
 			</array>
 		</dict>
 		<dict>
@@ -35,7 +35,7 @@
 			<string>Primuscoin Payment ACK</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>primuscoin.paymentack</string>
+				<string>ideaviscoin.paymentack</string>
 			</array>
 		</dict>
 	</array>
@@ -60,14 +60,14 @@
 			<string>litecoin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>primuscoin</string>
+				<string>ideaviscoin</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.primuscoin.piwallet</string>
+			<string>com.ideaviscoin.piwallet</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>primus</string>
@@ -147,11 +147,11 @@
 			<key>UTTypeDescription</key>
 			<string>Primuscoin Payment Request</string>
 			<key>UTTypeIdentifier</key>
-			<string>primuscoin.paymentrequest</string>
+			<string>ideaviscoin.paymentrequest</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/primuscoin-paymentrequest</string>
+				<string>application/ideaviscoin-paymentrequest</string>
 			</dict>
 		</dict>
 		<dict>
@@ -162,11 +162,11 @@
 			<key>UTTypeDescription</key>
 			<string>Primuscoin Payment</string>
 			<key>UTTypeIdentifier</key>
-			<string>primuscoin.payment</string>
+			<string>ideaviscoin.payment</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/primuscoin-payment</string>
+				<string>application/ideaviscoin-payment</string>
 			</dict>
 		</dict>
 		<dict>
@@ -177,11 +177,11 @@
 			<key>UTTypeDescription</key>
 			<string>Primuscoin Payment ACK</string>
 			<key>UTTypeIdentifier</key>
-			<string>primuscoin.paymentack</string>
+			<string>ideaviscoin.paymentack</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/primuscoin-paymentack</string>
+				<string>application/ideaviscoin-paymentack</string>
 			</dict>
 		</dict>
 	</array>

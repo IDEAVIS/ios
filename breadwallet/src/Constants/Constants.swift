@@ -33,12 +33,12 @@ struct C {
     static let secondsInDay: TimeInterval = 86400
     static let maxMoney: UInt64 = 84000000*100000000
     static let satoshis: UInt64 = 100000000
-    static let walletQueue = "com.primuscoin.walletqueue"
+    static let walletQueue = "com.ideaviscoin.walletqueue"
     static let btcCurrencyCode = "PM"
     static let null = "(null)"
     static let maxMemoLength = 250
-    static let feedbackEmail = "piwallet@primuscoin.com"
-    static let reviewLink = "https://primuscoin.com"
+    static let feedbackEmail = "piwallet@ideaviscoin.com"
+    static let reviewLink = "https://ideaviscoin.com"
     static var standardPort: Int {
         return E.isTestnet ? 19335 : 9333
     }

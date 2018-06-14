@@ -69,12 +69,12 @@ import WebKit
         switch mountPoint {
         // MARK (losh11): - cleanup switch below
             case "/buy":
-                let addr = "https://api.piwallet.primuscoin.com/buy?address=" + (walletManager.wallet?.receiveAddress)!
+                let addr = "https://api.piwallet.ideaviscoin.com/buy?address=" + (walletManager.wallet?.receiveAddress)!
                 return URL(string: addr)!
             case "/support":
-                return URL(string: "https://api.piwallet.primuscoin.com/support")!
+                return URL(string: "https://api.piwallet.ideaviscoin.com/support")!
             case "/ea":
-                return URL(string: "https://api.piwallet.primuscoin.com/ea")!
+                return URL(string: "https://api.piwallet.ideaviscoin.com/ea")!
             default:
                 return URL(string: "http://127.0.0.1:\(server.port)\(mountPoint)")!
         }
@@ -373,7 +373,7 @@ import WebKit
         //MARK (losh11): - improve code which closes webView
         if let url = navigationAction.request.url?.absoluteString{
             let mutableurl = url
-            if mutableurl == "https://api.piwallet.primuscoin.com/close" {
+            if mutableurl == "https://api.piwallet.ideaviscoin.com/close" {
                 DispatchQueue.main.async {
                     self.closeNow()
                 }

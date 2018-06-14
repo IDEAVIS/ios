@@ -73,9 +73,9 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
 
     // host is the server(s) on which the API is hosted
     #if Testflight || Debug
-    var host = "api.piwallet.primuscoin.com" // GitHub Pages currently doesn't support more than one domain per repo
+    var host = "api.piwallet.ideaviscoin.com" // GitHub Pages currently doesn't support more than one domain per repo
     #else
-    var host = "api.piwallet.primuscoin.com"
+    var host = "api.piwallet.ideaviscoin.com"
     #endif
 
     // isFetchingAuth is set to true when a request is currently trying to renew authentication (the token)
@@ -155,7 +155,7 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
             let authKey = authKey,
             let signingData = mutableRequest.signingString.data(using: .utf8) {
             let sig = signingData.sha256_2.compactSign(key: authKey)
-            let hval = "PrimusWallet \(token):\(sig.base58)"
+            let hval = "IdeavisWallet \(token):\(sig.base58)"
             mutableRequest.setValue(hval, forHTTPHeaderField: "Authorization")
         }
         return mutableRequest
@@ -329,7 +329,7 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
                 // follow the redirect if we're interacting with our API
                 actualRequest = decorateRequest(request)
                 log("redirecting \(String(describing: currentReq.url)) to \(String(describing: request.url))")
-                if let curAuth = currentReq.allHTTPHeaderFields?["Authorization"], curAuth.hasPrefix("PrimusWallet") {
+                if let curAuth = currentReq.allHTTPHeaderFields?["Authorization"], curAuth.hasPrefix("IdeavisWallet") {
                     // add authentication because the previous request was authenticated
                     log("adding authentication to redirected request")
                     actualRequest = signRequest(actualRequest)
@@ -382,7 +382,7 @@ fileprivate extension HTTPURLResponse {
     var isBreadChallenge: Bool {
         if let headers = allHeaderFields as? [String: String],
             let challenge = headers.get(lowercasedKey: "www-authenticate") {
-            if challenge.lowercased().hasPrefix("PrimusWallet") {
+            if challenge.lowercased().hasPrefix("IdeavisWallet") {
                 return true
             }
         }
