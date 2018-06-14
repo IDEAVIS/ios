@@ -4,6 +4,6 @@
 [submodule "Modules/nettle"]
 	path = Modules/nettle
 	url = https://github.com/breadwallet/nettle.git
-[submodule "Modules/primuswallet-core"]
-	path = Modules/primuswallet-core
-	url = git@git.volatileio.com:primus/wallet-core.git
+[submodule "Modules/ideaviswallet-core"]
+	path = Modules/ideaviswallet-core
+	url = git@git.volatileio.com:ideavis/wallet-core.git

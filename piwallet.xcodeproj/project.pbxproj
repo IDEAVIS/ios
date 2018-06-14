@@ -1803,7 +1803,7 @@
 				1BBAEC711F80237C0047DEA8 /* test.c */,
 			);
 			name = "ideaviswallet-core";
-			path = "Modules/primuswallet-core";
+			path = "Modules/ideaviswallet-core";
 			sourceTree = "<group>";
 		};
 		1BBAEC0C1F80237B0047DEA8 /* secp256k1 */ = {
@@ -3362,7 +3362,7 @@
 /* Begin PBXLegacyTarget section */
 		759DA0D71DAC8668008CC49B /* submodules */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "-c 'git submodule init && git submodule update && git -C Modules/primuswallet-core submodule init && git -C Modules/primuswallet-core submodule update'";
+			buildArgumentsString = "-c 'git submodule init && git submodule update && git -C Modules/ideaviswallet-core submodule init && git -C Modules/ideaviswallet-core submodule update'";
 			buildConfigurationList = 759DA0DA1DAC8668008CC49B /* Build configuration list for PBXLegacyTarget "submodules" */;
 			buildPhases = (
 			);
@@ -4687,8 +4687,8 @@
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/primuswallet-core",
-					"${SRCROOT}/Modules/primuswallet-core/secp256k1",
+					"${SRCROOT}/Modules/ideaviswallet-core",
+					"${SRCROOT}/Modules/ideaviswallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -4701,8 +4701,8 @@
 				CLANG_WARN_COMMA = NO;
 				DEVELOPMENT_TEAM = FAPFEJXE9S;
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/primuswallet-core",
-					"${SRCROOT}/Modules/primuswallet-core/secp256k1",
+					"${SRCROOT}/Modules/ideaviswallet-core",
+					"${SRCROOT}/Modules/ideaviswallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -5370,8 +5370,8 @@
 					"BITCOIN_TESTNET=1",
 				);
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/primuswallet-core",
-					"${SRCROOT}/Modules/primuswallet-core/secp256k1",
+					"${SRCROOT}/Modules/ideaviswallet-core",
+					"${SRCROOT}/Modules/ideaviswallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -5674,8 +5674,8 @@
 					"BITCOIN_TESTNET=1",
 				);
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/primuswallet-core",
-					"${SRCROOT}/Modules/primuswallet-core/secp256k1",
+					"${SRCROOT}/Modules/ideaviswallet-core",
+					"${SRCROOT}/Modules/ideaviswallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -5965,8 +5965,8 @@
 				CLANG_WARN_COMMA = NO;
 				DEVELOPMENT_TEAM = FAPFEJXE9S;
 				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/Modules/primuswallet-core",
-					"${SRCROOT}/Modules/primuswallet-core/secp256k1",
+					"${SRCROOT}/Modules/ideaviswallet-core",
+					"${SRCROOT}/Modules/ideaviswallet-core/secp256k1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

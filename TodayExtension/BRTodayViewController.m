@@ -29,8 +29,8 @@
 #import "UIImage+Utils.h"
 #import <NotificationCenter/NotificationCenter.h>
 
-#define SCAN_URL @"primus://x-callback-url/scanqr"
-#define OPEN_URL @"primus://"
+#define SCAN_URL @"ideavis://x-callback-url/scanqr"
+#define OPEN_URL @"ideavis://"
 
 @interface BRTodayViewController () <NCWidgetProviding>
 
