@@ -26,7 +26,7 @@ class ReachabilityMonitor : Trackable {
     var didChange: ((Bool) -> Void)?
 
     private var networkReachability: SCNetworkReachability?
-    private let reachabilitySerialQueue = DispatchQueue(label: "com.ideaviscoin.reachabilityQueue")
+    private let reachabilitySerialQueue = DispatchQueue(label: "io.ideavis.reachabilityQueue")
 
     func notify() {
         DispatchQueue.main.async {

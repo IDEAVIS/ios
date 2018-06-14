@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.ideaviscoin.piwallet</string>
+	<string>io.ideavis.piwallet</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

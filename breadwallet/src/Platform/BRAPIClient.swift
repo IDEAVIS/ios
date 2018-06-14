@@ -73,9 +73,9 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
 
     // host is the server(s) on which the API is hosted
     #if Testflight || Debug
-    var host = "api.piwallet.ideaviscoin.com" // GitHub Pages currently doesn't support more than one domain per repo
+    var host = "api.piwallet.ideavis.io" // GitHub Pages currently doesn't support more than one domain per repo
     #else
-    var host = "api.piwallet.ideaviscoin.com"
+    var host = "api.piwallet.ideavis.io"
     #endif
 
     // isFetchingAuth is set to true when a request is currently trying to renew authentication (the token)
@@ -163,7 +163,7 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
 
     private func decorateRequest(_ request: URLRequest) -> URLRequest {
         var actualRequest = request
-        actualRequest.setValue("\(E.isTestnet ? 1 : 0)", forHTTPHeaderField: "X-Primuscoin-Testnet")
+        actualRequest.setValue("\(E.isTestnet ? 1 : 0)", forHTTPHeaderField: "X-Ideaviscoin-Testnet")
         actualRequest.setValue("\((E.isTestFlight || E.isDebug) ? 1 : 0)", forHTTPHeaderField: "X-Testflight")
         actualRequest.setValue(Locale.current.identifier, forHTTPHeaderField: "Accept-Language")
         return actualRequest

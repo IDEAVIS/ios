@@ -73,6 +73,7 @@ open class BRKeyedUnarchiver {
             guard let bz = (compressed ? Data(bzCompressedData: data) : data),
                 let j = try JSONSerialization.jsonObject(with: bz, options: []) as? [String: AnyObject] else {
                 print("BRKeyedUnarchiver invalid json object, or invalid bz data")
+                print(data)
                 return nil
             }
             let coder = BRCoder(data: j)

@@ -4565,7 +4565,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/libbz2/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/libbz2/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.libbz2;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.libbz2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -4590,7 +4590,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/libbz2/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/libbz2/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.libbz2;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.libbz2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -4615,7 +4615,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/sqlite3/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/sqlite3/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.sqlite3;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.sqlite3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -4640,7 +4640,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/sqlite3/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/sqlite3/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.sqlite3;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.sqlite3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -4847,7 +4847,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				INFOPLIST_FILE = "breadwallet WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -4864,7 +4864,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				INFOPLIST_FILE = "breadwallet WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -4882,7 +4882,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				IBSC_MODULE = breadwallet_WatchKit_Extension;
 				INFOPLIST_FILE = "breadwallet WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -4899,7 +4899,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				IBSC_MODULE = breadwallet_WatchKit_Extension;
 				INFOPLIST_FILE = "breadwallet WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -4920,7 +4920,7 @@
 				INFOPLIST_FILE = breadwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DDebug";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -4940,7 +4940,7 @@
 				INFOPLIST_FILE = breadwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -4955,7 +4955,7 @@
 				DEVELOPMENT_TEAM = FAPFEJXE9S;
 				INFOPLIST_FILE = breadwalletTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwalletTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/piwallet.app/piwallet";
@@ -4970,7 +4970,7 @@
 				DEVELOPMENT_TEAM = FAPFEJXE9S;
 				INFOPLIST_FILE = breadwalletTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwalletTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/piwallet.app/piwallet";
@@ -5013,7 +5013,7 @@
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5027,7 +5027,7 @@
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5040,7 +5040,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5053,7 +5053,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5066,7 +5066,7 @@
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -5080,7 +5080,7 @@
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -5233,7 +5233,7 @@
 				INFOPLIST_FILE = breadwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DDebug -DScreenshots -DTestnet";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -5249,7 +5249,7 @@
 				DEVELOPMENT_TEAM = FAPFEJXE9S;
 				INFOPLIST_FILE = breadwalletTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwalletTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/piwallet.app/piwallet";
@@ -5278,7 +5278,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				IBSC_MODULE = breadwallet_WatchKit_Extension;
 				INFOPLIST_FILE = "breadwallet WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5294,7 +5294,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				INFOPLIST_FILE = "breadwallet WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5312,7 +5312,7 @@
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5325,7 +5325,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5338,7 +5338,7 @@
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -5413,7 +5413,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/libbz2/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/libbz2/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.libbz2;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.libbz2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -5438,7 +5438,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/sqlite3/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/sqlite3/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.sqlite3;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.sqlite3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -5537,7 +5537,7 @@
 				INFOPLIST_FILE = breadwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DDebug -DTestnet";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -5553,7 +5553,7 @@
 				DEVELOPMENT_TEAM = FAPFEJXE9S;
 				INFOPLIST_FILE = breadwalletTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwalletTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/piwallet.app/piwallet";
@@ -5582,7 +5582,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				IBSC_MODULE = breadwallet_WatchKit_Extension;
 				INFOPLIST_FILE = "breadwallet WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5598,7 +5598,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				INFOPLIST_FILE = "breadwallet WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5616,7 +5616,7 @@
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5629,7 +5629,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5642,7 +5642,7 @@
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -5717,7 +5717,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/libbz2/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/libbz2/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.libbz2;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.libbz2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -5742,7 +5742,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/sqlite3/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/sqlite3/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.sqlite3;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.sqlite3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -5834,7 +5834,7 @@
 				INFOPLIST_FILE = breadwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DTestflight -DDebug";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -5849,7 +5849,7 @@
 				DEVELOPMENT_TEAM = FAPFEJXE9S;
 				INFOPLIST_FILE = breadwalletTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwalletTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/piwallet.app/piwallet";
@@ -5878,7 +5878,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				IBSC_MODULE = breadwallet_WatchKit_Extension;
 				INFOPLIST_FILE = "breadwallet WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5894,7 +5894,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				INFOPLIST_FILE = "breadwallet WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5912,7 +5912,7 @@
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5925,7 +5925,7 @@
 				DEVELOPMENT_TEAM = S4LH5BBNZ6;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5938,7 +5938,7 @@
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.piwallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -6008,7 +6008,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/libbz2/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/libbz2/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.libbz2;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.libbz2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -6033,7 +6033,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/sqlite3/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/sqlite3/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideaviscoin.sqlite3;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.sqlite3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;

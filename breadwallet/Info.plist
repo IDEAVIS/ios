@@ -12,7 +12,7 @@
 			<key>CFBundleTypeIconFiles</key>
 			<array/>
 			<key>CFBundleTypeName</key>
-			<string>Primuscoin Payment Request</string>
+			<string>Ideaviscoin Payment Request</string>
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>ideaviscoin.paymentrequest</string>
@@ -22,7 +22,7 @@
 			<key>CFBundleTypeIconFiles</key>
 			<array/>
 			<key>CFBundleTypeName</key>
-			<string>Primuscoin Payment</string>
+			<string>Ideaviscoin Payment</string>
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>ideaviscoin.payment</string>
@@ -32,7 +32,7 @@
 			<key>CFBundleTypeIconFiles</key>
 			<array/>
 			<key>CFBundleTypeName</key>
-			<string>Primuscoin Payment ACK</string>
+			<string>Ideaviscoin Payment ACK</string>
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>ideaviscoin.paymentack</string>
@@ -67,7 +67,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.ideaviscoin.piwallet</string>
+			<string>io.ideavis.piwallet</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>ideavis</string>
@@ -145,7 +145,7 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Primuscoin Payment Request</string>
+			<string>Ideaviscoin Payment Request</string>
 			<key>UTTypeIdentifier</key>
 			<string>ideaviscoin.paymentrequest</string>
 			<key>UTTypeTagSpecification</key>
@@ -160,7 +160,7 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Primuscoin Payment</string>
+			<string>Ideaviscoin Payment</string>
 			<key>UTTypeIdentifier</key>
 			<string>ideaviscoin.payment</string>
 			<key>UTTypeTagSpecification</key>
@@ -175,7 +175,7 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Primuscoin Payment ACK</string>
+			<string>Ideaviscoin Payment ACK</string>
 			<key>UTTypeIdentifier</key>
 			<string>ideaviscoin.paymentack</string>
 			<key>UTTypeTagSpecification</key>
