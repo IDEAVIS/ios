@@ -13,7 +13,7 @@ enum MenuButtonType {
 //    case support
     case settings
     case lock
-    case buy
+//    case buy
 
     var title: String {
         switch self {
@@ -25,8 +25,8 @@ enum MenuButtonType {
             return S.MenuButton.settings
         case .lock:
             return S.MenuButton.lock
-        case .buy:
-            return S.MenuButton.buy
+//        case .buy:
+//            return S.MenuButton.buy
         }
     }
 
@@ -40,8 +40,8 @@ enum MenuButtonType {
             return #imageLiteral(resourceName: "Settings")
         case .lock:
             return #imageLiteral(resourceName: "Lock")
-        case .buy:
-            return #imageLiteral(resourceName: "Lock")
+//        case .buy:
+//            return #imageLiteral(resourceName: "Lock")
             //return #imageLiteral(resourceName: "BuyBitcoin")
         }
     }
