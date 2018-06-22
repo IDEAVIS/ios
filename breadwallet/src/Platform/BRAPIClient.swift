@@ -224,7 +224,7 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
                         handler(data, httpResp, err as NSError?)
                     }
                 } else {
-                    self.log("\(logLine) encountered connection error \(String(describing: err))")
+                    self.log("\(logLine) I encountered connection error \(String(describing: err))")
                     handler(data, nil, err as NSError?)
                 }
             }
