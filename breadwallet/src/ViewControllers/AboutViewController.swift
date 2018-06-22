@@ -30,9 +30,9 @@ class AboutViewController : UIViewController {
         view.addSubview(titleLabel)
         view.addSubview(logoBackground)
         logoBackground.addSubview(logo)
-        view.addSubview(blog)
-        view.addSubview(twitter)
-        view.addSubview(reddit)
+//        view.addSubview(blog)
+//        view.addSubview(twitter)
+//        view.addSubview(reddit)
         view.addSubview(privacy)
         view.addSubview(footer)
     }

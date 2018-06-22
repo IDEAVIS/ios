@@ -291,11 +291,11 @@ class ModalPresenter : Subscriber, Trackable {
                 self?.presentSecurityCenter()
             }
         }
-        menu.didTapSupport = { [weak self, weak menu] in
-            menu?.dismiss(animated: true, completion: {
-                self?.presentFaq()
-            })
-        }
+//        menu.didTapSupport = { [weak self, weak menu] in
+//            menu?.dismiss(animated: true, completion: {
+//                self?.presentFaq()
+//            })
+//        }
         menu.didTapLock = { [weak self, weak menu] in
             menu?.dismiss(animated: true) {
                 self?.store.trigger(name: .lock)
