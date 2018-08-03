@@ -24,6 +24,7 @@
 		1BBAEC901F80261D0047DEA8 /* BRMerkleBlock.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BBAEBFB1F80237B0047DEA8 /* BRMerkleBlock.c */; };
 		1BBAEC911F8026250047DEA8 /* BRBIP32Sequence.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BBAEBED1F80237B0047DEA8 /* BRBIP32Sequence.c */; };
 		1BBAEC921F80262A0047DEA8 /* BRWallet.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BBAEC071F80237B0047DEA8 /* BRWallet.c */; };
+		1C9376A8211497FB00E37160 /* piwallet WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 75A2A7B81DA5934300A983D8 /* piwallet WatchKit App.app */; };
 		22122B721F0B8996000E9AB9 /* BRAPIClient+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22122B711F0B8996000E9AB9 /* BRAPIClient+Events.swift */; };
 		2218BD771E8F55430091D5E8 /* BRAPIClient+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218BD761E8F55430091D5E8 /* BRAPIClient+Assets.swift */; };
 		2218BD791E8F6CBA0091D5E8 /* AssetBundles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2218BD781E8F6CBA0091D5E8 /* AssetBundles.plist */; };
@@ -200,9 +201,8 @@
 		75A2A7941DA5934300A983D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7931DA5934300A983D8 /* AppDelegate.swift */; };
 		75A2A79B1DA5934300A983D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A2A79A1DA5934300A983D8 /* Assets.xcassets */; };
 		75A2A79E1DA5934300A983D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2A79C1DA5934300A983D8 /* LaunchScreen.storyboard */; };
-		75A2A7B41DA5934300A983D8 /* breadwalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7B31DA5934300A983D8 /* breadwalletUITests.swift */; };
-		75A2A7B91DA5934300A983D8 /* piwallet WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 75A2A7B81DA5934300A983D8 /* piwallet WatchKit App.app */; };
-		75A2A7BF1DA5934300A983D8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2A7BD1DA5934300A983D8 /* Interface.storyboard */; };
+		75A2A7B41DA5934300A983D8 /* piwalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7B31DA5934300A983D8 /* piwalletUITests.swift */; };
+		75A2A7BF1DA5934300A983D8 /* Interface.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75A2A7BD1DA5934300A983D8 /* Interface.strings */; };
 		75A2A7C11DA5934300A983D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A2A7C01DA5934300A983D8 /* Assets.xcassets */; };
 		75A2A7C81DA5934300A983D8 /* piwallet WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75A2A7C71DA5934300A983D8 /* piwallet WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		75A2A7CF1DA5934300A983D8 /* BalanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7CE1DA5934300A983D8 /* BalanceInterfaceController.swift */; };
@@ -466,28 +466,28 @@
 			containerPortal = 75A2A7881DA5934300A983D8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 75A2A78F1DA5934300A983D8;
-			remoteInfo = breadwallet;
+			remoteInfo = piwallet;
 		};
 		75A2A7B01DA5934300A983D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 75A2A7881DA5934300A983D8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 75A2A78F1DA5934300A983D8;
-			remoteInfo = breadwallet;
+			remoteInfo = piwallet;
 		};
 		75A2A7BA1DA5934300A983D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 75A2A7881DA5934300A983D8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 75A2A7B71DA5934300A983D8;
-			remoteInfo = "breadwallet WatchKit App";
+			remoteInfo = "piwallet WatchKit App";
 		};
 		75A2A7C91DA5934300A983D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 75A2A7881DA5934300A983D8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 75A2A7C61DA5934300A983D8;
-			remoteInfo = "breadwallet WatchKit Extension";
+			remoteInfo = "piwallet WatchKit Extension";
 		};
 		75A2A8121DA5936F00A983D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -508,7 +508,7 @@
 			containerPortal = 75A2A7881DA5934300A983D8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 75A2A78F1DA5934300A983D8;
-			remoteInfo = breadwallet;
+			remoteInfo = piwallet;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -560,7 +560,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				75A2A7B91DA5934300A983D8 /* piwallet WatchKit App.app in Embed Watch Content */,
+				1C9376A8211497FB00E37160 /* piwallet WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -725,7 +725,7 @@
 		1BBAEC7D1F8025020047DEA8 /* BRCrypto.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BRCrypto.c; sourceTree = "<group>"; };
 		22122B711F0B8996000E9AB9 /* BRAPIClient+Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BRAPIClient+Events.swift"; sourceTree = "<group>"; };
 		2218BD761E8F55430091D5E8 /* BRAPIClient+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BRAPIClient+Assets.swift"; path = "src/Platform/BRAPIClient+Assets.swift"; sourceTree = "<group>"; };
-		2218BD781E8F6CBA0091D5E8 /* AssetBundles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AssetBundles.plist; path = src/AssetBundles.plist; sourceTree = "<group>"; };
+		2218BD781E8F6CBA0091D5E8 /* AssetBundles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = AssetBundles.plist; path = src/AssetBundles.plist; sourceTree = "<group>"; };
 		222319AF1F27985A00008F20 /* BRBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BRBrowserViewController.swift; path = src/Platform/BRBrowserViewController.swift; sourceTree = "<group>"; };
 		222319B11F279B3C00008F20 /* POSTBouncer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = POSTBouncer.html; path = src/POSTBouncer.html; sourceTree = "<group>"; };
 		2228734C1E916F7C0044BA15 /* BRAPIClient+Features.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BRAPIClient+Features.swift"; sourceTree = "<group>"; };
@@ -1351,24 +1351,24 @@
 		75A2A7931DA5934300A983D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75A2A79A1DA5934300A983D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75A2A79D1DA5934300A983D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		75A2A79F1DA5934300A983D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A2A79F1DA5934300A983D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		75A2A7A41DA5934300A983D8 /* piwalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = piwalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75A2A7AA1DA5934300A983D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A2A7AA1DA5934300A983D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		75A2A7AF1DA5934300A983D8 /* piwalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = piwalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75A2A7B31DA5934300A983D8 /* breadwalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breadwalletUITests.swift; sourceTree = "<group>"; };
-		75A2A7B51DA5934300A983D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A2A7B31DA5934300A983D8 /* piwalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piwalletUITests.swift; sourceTree = "<group>"; };
+		75A2A7B51DA5934300A983D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		75A2A7B81DA5934300A983D8 /* piwallet WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "piwallet WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A2A7BE1DA5934300A983D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		75A2A7C01DA5934300A983D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		75A2A7C21DA5934300A983D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A2A7C21DA5934300A983D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		75A2A7C71DA5934300A983D8 /* piwallet WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "piwallet WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		75A2A7CD1DA5934300A983D8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		75A2A7CD1DA5934300A983D8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = file.apns; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		75A2A7CE1DA5934300A983D8 /* BalanceInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceInterfaceController.swift; sourceTree = "<group>"; };
 		75A2A7D01DA5934300A983D8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		75A2A7D21DA5934300A983D8 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		75A2A7D41DA5934300A983D8 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		75A2A7D61DA5934300A983D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		75A2A7D81DA5934400A983D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A2A7D81DA5934400A983D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		75A2A7F01DA5935F00A983D8 /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A2A7F21DA5935F00A983D8 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		75A2A7F51DA5935F00A983D8 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -1430,7 +1430,7 @@
 		75A2A8791DA59C8B00A983D8 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Interface.strings; sourceTree = "<group>"; };
 		75A2A87A1DA59C8B00A983D8 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/MainInterface.strings; sourceTree = "<group>"; };
 		75A2A87B1DA59C8B00A983D8 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/MainInterface.strings; sourceTree = "<group>"; };
-		75A2A87C1DA59E4E00A983D8 /* breadwallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = breadwallet.entitlements; sourceTree = "<group>"; };
+		75A2A87C1DA59E4E00A983D8 /* piwallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = piwallet.entitlements; sourceTree = "<group>"; };
 		75C735AF1DAA1C9F00251ECF /* libnettle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnettle.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		75FEFD1B1DAED56E00203D3A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		CE03EC711EF193800038E3A8 /* String+Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Keys.swift"; path = "src/Extensions/String+Keys.swift"; sourceTree = "<group>"; };
@@ -1497,11 +1497,11 @@
 		CE4B6C1F1E233C2C00CF935B /* UITableView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+Additions.swift"; path = "src/Extensions/UITableView+Additions.swift"; sourceTree = "<group>"; };
 		CE4C1CC51ED65D830063E184 /* DrawableCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawableCircle.swift; path = src/Views/DrawableCircle.swift; sourceTree = "<group>"; };
 		CE4C1CC71ED88B600063E184 /* URLController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLController.swift; path = src/FlowControllers/URLController.swift; sourceTree = "<group>"; };
-		CE4C1CD11ED8BCC70063E184 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/BIP39Words.plist; sourceTree = "<group>"; };
-		CE4C1CD31ED8BCCA0063E184 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = fr; path = fr.lproj/BIP39Words.plist; sourceTree = "<group>"; };
-		CE4C1CD41ED8BCCC0063E184 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/BIP39Words.plist"; sourceTree = "<group>"; };
-		CE4C1CD51ED8BCCF0063E184 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/BIP39Words.plist; sourceTree = "<group>"; };
-		CE4C1CD61ED8BCD10063E184 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/BIP39Words.plist; sourceTree = "<group>"; };
+		CE4C1CD11ED8BCC70063E184 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = en; path = en.lproj/BIP39Words.plist; sourceTree = "<group>"; };
+		CE4C1CD31ED8BCCA0063E184 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = fr; path = fr.lproj/BIP39Words.plist; sourceTree = "<group>"; };
+		CE4C1CD41ED8BCCC0063E184 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "zh-Hans"; path = "zh-Hans.lproj/BIP39Words.plist"; sourceTree = "<group>"; };
+		CE4C1CD51ED8BCCF0063E184 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = ja; path = ja.lproj/BIP39Words.plist; sourceTree = "<group>"; };
+		CE4C1CD61ED8BCD10063E184 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = es; path = es.lproj/BIP39Words.plist; sourceTree = "<group>"; };
 		CE4CA7B91EE0C8D900373F11 /* BitIdTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitIdTests.swift; sourceTree = "<group>"; };
 		CE4CA7BB1EE3649100373F11 /* BRActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BRActivityView.swift; path = src/Platform/BRActivityView.swift; sourceTree = "<group>"; };
 		CE4DFB2B1E9BE5880014009E /* ReScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReScanViewController.swift; path = src/ViewControllers/ReScanViewController.swift; sourceTree = "<group>"; };
@@ -1563,10 +1563,10 @@
 		CEAA9E961DC18E1F0066731D /* PhraseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhraseView.swift; path = src/Views/PhraseView.swift; sourceTree = "<group>"; };
 		CEAA9E981DC262800066731D /* ConfirmPaperPhraseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfirmPaperPhraseViewController.swift; path = src/ViewControllers/ConfirmPaperPhraseViewController.swift; sourceTree = "<group>"; };
 		CEAA9E9A1DC2B9320066731D /* ConfirmPhrase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfirmPhrase.swift; path = src/Views/ConfirmPhrase.swift; sourceTree = "<group>"; };
-		CEAA9E9D1DC2F90C0066731D /* CircularPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CircularPro-Bold.otf"; path = "Fonts/CircularPro-Bold.otf"; sourceTree = "<group>"; };
+		CEAA9E9D1DC2F90C0066731D /* CircularPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file.otf; name = "CircularPro-Bold.otf"; path = "Fonts/CircularPro-Bold.otf"; sourceTree = "<group>"; };
 		CEAA9E9F1DC2F9F50066731D /* UIFont+BRWAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+BRWAdditions.swift"; path = "src/Extensions/UIFont+BRWAdditions.swift"; sourceTree = "<group>"; };
-		CEAA9EA11DC2FC700066731D /* CircularPro-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CircularPro-Book.otf"; path = "Fonts/CircularPro-Book.otf"; sourceTree = "<group>"; };
-		CEAA9EA21DC2FC700066731D /* CircularPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CircularPro-Medium.otf"; path = "Fonts/CircularPro-Medium.otf"; sourceTree = "<group>"; };
+		CEAA9EA11DC2FC700066731D /* CircularPro-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file.otf; name = "CircularPro-Book.otf"; path = "Fonts/CircularPro-Book.otf"; sourceTree = "<group>"; };
+		CEAA9EA21DC2FC700066731D /* CircularPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file.otf; name = "CircularPro-Medium.otf"; path = "Fonts/CircularPro-Medium.otf"; sourceTree = "<group>"; };
 		CEAA9EA51DC3246F0066731D /* StartNavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartNavigationDelegate.swift; path = src/FlowControllers/StartNavigationDelegate.swift; sourceTree = "<group>"; };
 		CEAA9EA71DC3342E0066731D /* PinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinView.swift; path = src/Views/PinView.swift; sourceTree = "<group>"; };
 		CEAFC8601E5D5B0500E4FD06 /* SegmentedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegmentedButton.swift; path = src/Controls/SegmentedButton.swift; sourceTree = "<group>"; };
@@ -1620,9 +1620,9 @@
 		CEE628291EA98B6D001035AA /* DispatchQueue+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Additions.swift"; path = "src/Extensions/DispatchQueue+Additions.swift"; sourceTree = "<group>"; };
 		CEE659E61F65A936001FF29D /* RetryTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RetryTimer.swift; path = src/RetryTimer.swift; sourceTree = "<group>"; };
 		CEE659E81F664C73001FF29D /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = src/ViewControllers/WelcomeViewController.swift; sourceTree = "<group>"; };
-		CEE659EA1F68A8BB001FF29D /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = it; path = it.lproj/BIP39Words.plist; sourceTree = "<group>"; };
-		CEE659EB1F68A8BD001FF29D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ko; path = ko.lproj/BIP39Words.plist; sourceTree = "<group>"; };
-		CEE659EC1F68AA7E001FF29D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hant"; path = "zh-Hant.lproj/BIP39Words.plist"; sourceTree = "<group>"; };
+		CEE659EA1F68A8BB001FF29D /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = it; path = it.lproj/BIP39Words.plist; sourceTree = "<group>"; };
+		CEE659EB1F68A8BD001FF29D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = ko; path = ko.lproj/BIP39Words.plist; sourceTree = "<group>"; };
+		CEE659EC1F68AA7E001FF29D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "zh-Hant"; path = "zh-Hant.lproj/BIP39Words.plist"; sourceTree = "<group>"; };
 		CEE659ED1F68AAB5001FF29D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CEE659EE1F68AAB9001FF29D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CEE65DEF1E39056F0002994D /* Rate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rate.swift; path = src/Models/Rate.swift; sourceTree = "<group>"; };
@@ -2772,11 +2772,11 @@
 		75A2A7871DA5934300A983D8 = {
 			isa = PBXGroup;
 			children = (
-				75A2A7921DA5934300A983D8 /* breadwallet */,
-				75A2A7A71DA5934300A983D8 /* breadwalletTests */,
-				75A2A7B21DA5934300A983D8 /* breadwalletUITests */,
-				75A2A7BC1DA5934300A983D8 /* breadwallet WatchKit App */,
-				75A2A7CB1DA5934300A983D8 /* breadwallet WatchKit Extension */,
+				75A2A7921DA5934300A983D8 /* piwallet */,
+				75A2A7A71DA5934300A983D8 /* piwalletTests */,
+				75A2A7B21DA5934300A983D8 /* piwalletUITests */,
+				75A2A7BC1DA5934300A983D8 /* piwallet WatchKit App */,
+				75A2A7CB1DA5934300A983D8 /* piwallet WatchKit Extension */,
 				75A2A7F41DA5935F00A983D8 /* MessagesExtension */,
 				75A2A80B1DA5936F00A983D8 /* TodayExtension */,
 				75A2A81D1DA5938500A983D8 /* NotificationServiceExtension */,
@@ -2808,10 +2808,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		75A2A7921DA5934300A983D8 /* breadwallet */ = {
+		75A2A7921DA5934300A983D8 /* piwallet */ = {
 			isa = PBXGroup;
 			children = (
-				75A2A87C1DA59E4E00A983D8 /* breadwallet.entitlements */,
+				75A2A87C1DA59E4E00A983D8 /* piwallet.entitlements */,
 				75A2A7931DA5934300A983D8 /* AppDelegate.swift */,
 				CE20C8F11DBAF71500C8397A /* ApplicationController.swift */,
 				754AE0BB1DFE8A46007FD001 /* BRCore.swift */,
@@ -2850,10 +2850,10 @@
 				75A2A79C1DA5934300A983D8 /* LaunchScreen.storyboard */,
 				75A2A79F1DA5934300A983D8 /* Info.plist */,
 			);
-			path = breadwallet;
+			path = piwallet;
 			sourceTree = "<group>";
 		};
-		75A2A7A71DA5934300A983D8 /* breadwalletTests */ = {
+		75A2A7A71DA5934300A983D8 /* piwalletTests */ = {
 			isa = PBXGroup;
 			children = (
 				75A2A7AA1DA5934300A983D8 /* Info.plist */,
@@ -2868,30 +2868,30 @@
 				CEEC70971E96BF8800EF788E /* DefaultCurrencyTests.swift */,
 				CEA7E6751F057D77001F8C27 /* WalletInfoTest.swift */,
 			);
-			path = breadwalletTests;
+			path = piwalletTests;
 			sourceTree = "<group>";
 		};
-		75A2A7B21DA5934300A983D8 /* breadwalletUITests */ = {
+		75A2A7B21DA5934300A983D8 /* piwalletUITests */ = {
 			isa = PBXGroup;
 			children = (
-				75A2A7B31DA5934300A983D8 /* breadwalletUITests.swift */,
+				75A2A7B31DA5934300A983D8 /* piwalletUITests.swift */,
 				75A2A7B51DA5934300A983D8 /* Info.plist */,
 			);
-			path = breadwalletUITests;
+			path = piwalletUITests;
 			sourceTree = "<group>";
 		};
-		75A2A7BC1DA5934300A983D8 /* breadwallet WatchKit App */ = {
+		75A2A7BC1DA5934300A983D8 /* piwallet WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				75A2A7BD1DA5934300A983D8 /* Interface.storyboard */,
+				75A2A7BD1DA5934300A983D8 /* Interface.strings */,
 				75A2A7C01DA5934300A983D8 /* Assets.xcassets */,
 				75A2A7C21DA5934300A983D8 /* Info.plist */,
 				CEFFA2D01EB3BD730085C5D1 /* LoadingIndicator.xcassets */,
 			);
-			path = "breadwallet WatchKit App";
+			path = "piwallet WatchKit App";
 			sourceTree = "<group>";
 		};
-		75A2A7CB1DA5934300A983D8 /* breadwallet WatchKit Extension */ = {
+		75A2A7CB1DA5934300A983D8 /* piwallet WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
 				75A2A7D01DA5934300A983D8 /* ExtensionDelegate.swift */,
@@ -2906,7 +2906,7 @@
 				75A2A7D81DA5934400A983D8 /* Info.plist */,
 				75A2A7CC1DA5934300A983D8 /* Supporting Files */,
 			);
-			path = "breadwallet WatchKit Extension";
+			path = "piwallet WatchKit Extension";
 			sourceTree = "<group>";
 		};
 		75A2A7CC1DA5934300A983D8 /* Supporting Files */ = {
@@ -3472,7 +3472,7 @@
 				752FB04F1DF8BF5C009086FB /* PBXTargetDependency */,
 			);
 			name = piwallet;
-			productName = breadwallet;
+			productName = piwallet;
 			productReference = 75A2A7901DA5934300A983D8 /* piwallet.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -3490,7 +3490,7 @@
 				75A2A7A61DA5934300A983D8 /* PBXTargetDependency */,
 			);
 			name = piwalletTests;
-			productName = breadwalletTests;
+			productName = piwalletTests;
 			productReference = 75A2A7A41DA5934300A983D8 /* piwalletTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -3508,7 +3508,7 @@
 				75A2A7B11DA5934300A983D8 /* PBXTargetDependency */,
 			);
 			name = piwalletUITests;
-			productName = breadwalletUITests;
+			productName = piwalletUITests;
 			productReference = 75A2A7AF1DA5934300A983D8 /* piwalletUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -3525,7 +3525,7 @@
 				75A2A7CA1DA5934300A983D8 /* PBXTargetDependency */,
 			);
 			name = "piwallet WatchKit App";
-			productName = "breadwallet WatchKit App";
+			productName = "piwallet WatchKit App";
 			productReference = 75A2A7B81DA5934300A983D8 /* piwallet WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
@@ -3543,7 +3543,7 @@
 			dependencies = (
 			);
 			name = "piwallet WatchKit Extension";
-			productName = "breadwallet WatchKit Extension";
+			productName = "piwallet WatchKit Extension";
 			productReference = 75A2A7C71DA5934300A983D8 /* piwallet WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
@@ -3642,8 +3642,8 @@
 			attributes = {
 				CLASSPREFIX = BR;
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "breadwallet LLC";
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Ideavis;
 				TargetAttributes = {
 					22A9A9951DF63426000F0016 = {
 						CreatedOnToolsVersion = 8.1;
@@ -3832,7 +3832,7 @@
 			files = (
 				CEFFA2D11EB3BD730085C5D1 /* LoadingIndicator.xcassets in Resources */,
 				75A2A7C11DA5934300A983D8 /* Assets.xcassets in Resources */,
-				75A2A7BF1DA5934300A983D8 /* Interface.storyboard in Resources */,
+				75A2A7BF1DA5934300A983D8 /* Interface.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4246,7 +4246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A2A7B41DA5934300A983D8 /* breadwalletUITests.swift in Sources */,
+				75A2A7B41DA5934300A983D8 /* piwalletUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4437,7 +4437,7 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		75A2A7BD1DA5934300A983D8 /* Interface.storyboard */ = {
+		75A2A7BD1DA5934300A983D8 /* Interface.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				75A2A7BE1DA5934300A983D8 /* Base */,
@@ -4458,7 +4458,7 @@
 				75A2A8741DA59C8500A983D8 /* hu */,
 				75A2A8791DA59C8B00A983D8 /* el */,
 			);
-			name = Interface.storyboard;
+			name = Interface.strings;
 			sourceTree = "<group>";
 		};
 		75A2A7F71DA5935F00A983D8 /* MainInterface.storyboard */ = {
@@ -4555,7 +4555,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FAPFEJXE9S;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -4580,7 +4580,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FAPFEJXE9S;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -4602,10 +4602,11 @@
 		752FB0481DF8BE6B009086FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FAPFEJXE9S;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -4630,7 +4631,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FAPFEJXE9S;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -4776,7 +4777,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/breadwallet/src/Platform";
+				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/piwallet/src/Platform";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -4831,7 +4832,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/breadwallet/src/Platform";
+				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/piwallet/src/Platform";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
@@ -4844,10 +4845,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = "breadwallet WatchKit Extension/Info.plist";
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = "piwallet WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.thewatchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -4861,10 +4862,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = "breadwallet WatchKit Extension/Info.plist";
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = "piwallet WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.thewatchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -4879,10 +4880,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				IBSC_MODULE = breadwallet_WatchKit_Extension;
-				INFOPLIST_FILE = "breadwallet WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				IBSC_MODULE = piwallet_WatchKit_Extension;
+				INFOPLIST_FILE = "piwallet WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.thewatchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -4896,10 +4897,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				IBSC_MODULE = breadwallet_WatchKit_Extension;
-				INFOPLIST_FILE = "breadwallet WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				IBSC_MODULE = piwallet_WatchKit_Extension;
+				INFOPLIST_FILE = "piwallet WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.thewatchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -4914,10 +4915,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				CODE_SIGN_ENTITLEMENTS = piwallet/piwallet.entitlements;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
-				INFOPLIST_FILE = breadwallet/Info.plist;
+				INFOPLIST_FILE = piwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DDebug";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
@@ -4934,10 +4935,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				CODE_SIGN_ENTITLEMENTS = piwallet/piwallet.entitlements;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
-				INFOPLIST_FILE = breadwallet/Info.plist;
+				INFOPLIST_FILE = piwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
@@ -4952,8 +4953,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = breadwalletTests/Info.plist;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = piwalletTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4967,8 +4968,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = breadwalletTests/Info.plist;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = piwalletTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4981,13 +4982,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = breadwalletUITests/Info.plist;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = piwalletUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwalletUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.piwalletUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = breadwallet;
+				TEST_TARGET_NAME = piwallet;
 			};
 			name = Debug;
 		};
@@ -4995,13 +4996,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = breadwalletUITests/Info.plist;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = piwalletUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwalletUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.piwalletUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = breadwallet;
+				TEST_TARGET_NAME = piwallet;
 			};
 			name = Release;
 		};
@@ -5009,11 +5010,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheMessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5023,11 +5024,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheMessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5037,10 +5038,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.Today.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5050,10 +5051,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.Today.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5062,11 +5063,11 @@
 		75A2A8251DA5938500A983D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -5076,11 +5077,11 @@
 		75A2A8261DA5938500A983D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -5124,7 +5125,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.voisine..Screenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = breadwallet;
+				TEST_TARGET_NAME = piwallet;
 			};
 			name = Debug;
 		};
@@ -5139,7 +5140,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.voisine..Screenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = breadwallet;
+				TEST_TARGET_NAME = piwallet;
 			};
 			name = Release;
 		};
@@ -5154,7 +5155,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.voisine..Screenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = breadwallet;
+				TEST_TARGET_NAME = piwallet;
 			};
 			name = Testflight;
 		};
@@ -5213,7 +5214,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/breadwallet/src/Platform";
+				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/piwallet/src/Platform";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -5227,10 +5228,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				CODE_SIGN_ENTITLEMENTS = piwallet/piwallet.entitlements;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
-				INFOPLIST_FILE = breadwallet/Info.plist;
+				INFOPLIST_FILE = piwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DDebug -DScreenshots -DTestnet";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
@@ -5246,8 +5247,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = breadwalletTests/Info.plist;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = piwalletTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5260,13 +5261,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = breadwalletUITests/Info.plist;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = piwalletUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwalletUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.piwalletUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = breadwallet;
+				TEST_TARGET_NAME = piwallet;
 			};
 			name = Screenshots;
 		};
@@ -5275,10 +5276,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				IBSC_MODULE = breadwallet_WatchKit_Extension;
-				INFOPLIST_FILE = "breadwallet WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				IBSC_MODULE = piwallet_WatchKit_Extension;
+				INFOPLIST_FILE = "piwallet WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.thewatchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5291,10 +5292,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = "breadwallet WatchKit Extension/Info.plist";
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = "piwallet WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.thewatchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5308,11 +5309,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheMessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5322,10 +5323,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.Today.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5334,11 +5335,11 @@
 		CEA7E6901F09AC6A001F8C27 /* Screenshots */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -5403,7 +5404,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FAPFEJXE9S;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -5428,7 +5429,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FAPFEJXE9S;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -5458,7 +5459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.voisine..Screenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = breadwallet;
+				TEST_TARGET_NAME = piwallet;
 			};
 			name = Screenshots;
 		};
@@ -5517,7 +5518,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/breadwallet/src/Platform";
+				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/piwallet/src/Platform";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -5531,10 +5532,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				CODE_SIGN_ENTITLEMENTS = piwallet/piwallet.entitlements;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
-				INFOPLIST_FILE = breadwallet/Info.plist;
+				INFOPLIST_FILE = piwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DDebug -DTestnet";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
@@ -5550,8 +5551,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = breadwalletTests/Info.plist;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = piwalletTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5564,13 +5565,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = breadwalletUITests/Info.plist;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = piwalletUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwalletUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.piwalletUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = breadwallet;
+				TEST_TARGET_NAME = piwallet;
 			};
 			name = Testnet;
 		};
@@ -5579,10 +5580,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				IBSC_MODULE = breadwallet_WatchKit_Extension;
-				INFOPLIST_FILE = "breadwallet WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				IBSC_MODULE = piwallet_WatchKit_Extension;
+				INFOPLIST_FILE = "piwallet WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.thewatchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5595,10 +5596,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = "breadwallet WatchKit Extension/Info.plist";
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = "piwallet WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.thewatchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5612,11 +5613,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheMessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5626,10 +5627,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.Today.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5638,11 +5639,11 @@
 		CEA7E6A31F0AAA84001F8C27 /* Testnet */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -5707,7 +5708,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FAPFEJXE9S;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -5732,7 +5733,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FAPFEJXE9S;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -5762,7 +5763,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.voisine..Screenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = breadwallet;
+				TEST_TARGET_NAME = piwallet;
 			};
 			name = Testnet;
 		};
@@ -5813,7 +5814,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/breadwallet/src/Platform";
+				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/piwallet/src/Platform";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
@@ -5828,10 +5829,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				CODE_SIGN_ENTITLEMENTS = piwallet/piwallet.entitlements;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
-				INFOPLIST_FILE = breadwallet/Info.plist;
+				INFOPLIST_FILE = piwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DTestflight -DDebug";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
@@ -5846,8 +5847,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = breadwalletTests/Info.plist;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = piwalletTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5860,13 +5861,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = breadwalletUITests/Info.plist;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = piwalletUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwalletUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.piwalletUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = breadwallet;
+				TEST_TARGET_NAME = piwallet;
 			};
 			name = Testflight;
 		};
@@ -5875,10 +5876,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				IBSC_MODULE = breadwallet_WatchKit_Extension;
-				INFOPLIST_FILE = "breadwallet WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				IBSC_MODULE = piwallet_WatchKit_Extension;
+				INFOPLIST_FILE = "piwallet WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.thewatchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5891,10 +5892,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
-				INFOPLIST_FILE = "breadwallet WatchKit Extension/Info.plist";
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
+				INFOPLIST_FILE = "piwallet WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.thewatchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5908,11 +5909,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheMessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5922,10 +5923,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.Today.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5934,11 +5935,11 @@
 		CEE0EF5C1EBF8D7F0018DB36 /* Testflight */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 3SKENY2EZ6;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -5998,7 +5999,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FAPFEJXE9S;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -6023,7 +6024,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FAPFEJXE9S;
+				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
