@@ -32,10 +32,10 @@ class DefaultCurrencyViewController: UITableViewController, Subscriber {
     didSet {
       //Grab index paths of new and old rows when the currency changes
       let paths: [IndexPath] = rates.enumerated().filter {
-            $0.1.code == defaultCurrencyCode || $0.1.code == oldValue
-          }.map {
-            IndexPath(row: $0.0, section: 0)
-          }
+        $0.1.code == defaultCurrencyCode || $0.1.code == oldValue
+      }.map {
+        IndexPath(row: $0.0, section: 0)
+      }
       tableView.beginUpdates()
       tableView.reloadRows(at: paths, with: .automatic)
       tableView.endUpdates()
@@ -72,9 +72,9 @@ class DefaultCurrencyViewController: UITableViewController, Subscriber {
     titleLabel.sizeToFit()
     navigationItem.titleView = titleLabel
 
-    let faqButton = UIButton.buildFaqButton(store: store, articleId: ArticleIds.displayCurrency)
-    faqButton.tintColor = .darkText
-    navigationItem.rightBarButtonItems = [UIBarButtonItem.negativePadding, UIBarButtonItem(customView: faqButton)]
+//    let faqButton = UIButton.buildFaqButton(store: store, articleId: ArticleIds.displayCurrency)
+//    faqButton.tintColor = .darkText
+    navigationItem.rightBarButtonItems = [UIBarButtonItem.negativePadding]
   }
 
   private func setExchangeRateLabel() {

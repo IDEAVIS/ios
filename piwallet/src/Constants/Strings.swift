@@ -22,7 +22,7 @@ enum S {
       case 2:
         return "subIVCs\(S.Symbols.narrowSpace)(m\(S.Symbols.bits))"
       case 5:
-        return "subIVCs\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
+        return "IVCs\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
       case 8:
         return "IVC\(S.Symbols.narrowSpace)(\(S.Symbols.btc))"
       default:

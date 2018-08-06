@@ -67,9 +67,9 @@ extension UserDefaults {
     }
 
     //
-    // 2 - subprimes
-    // 5 - primes
-    // 8 - PM
+    // 2 - subIVCs
+    // 5 - IVCs
+    // 8 - IVC
     //
     static var maxDigits: Int {
         get {
@@ -78,7 +78,7 @@ extension UserDefaults {
             }
             let maxDigits = defaults.integer(forKey: maxDigitsKey)
             if maxDigits == 5 {
-                return 8 //Convert primes to PM
+                return 8 //Convert IVCs to IVC
             } else {
                 return maxDigits
             }
