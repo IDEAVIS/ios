@@ -38,16 +38,16 @@ extension UserDefaults {
 
     static var defaultCurrencyCode: String {
         get {
-            var currencyCode = "USD";
+            var currencyCode = "EUR";
             if defaults.object(forKey: defaultCurrencyCodeKey) == nil {
-                currencyCode = Locale.current.currencyCode ?? "USD"
+                currencyCode = Locale.current.currencyCode ?? "EUR"
             } else {
                 currencyCode = defaults.string(forKey: defaultCurrencyCodeKey)!
             }
             let acceptedCurrencyCodes = ["USD","EUR","JPY","BGN","CZK","DKK","GBP","HUF","PLN","RON","SEK","CHF","NOK","HRK","RUB","TRY","AUD","BRL","CAD","CNY","HKD","IDR","ILS","INR","KRW","MXN","MYR","NZD","PHP","SDG","THB","ZAR"]
 
             if !(acceptedCurrencyCodes.contains(currencyCode)) {
-                return "USD";
+                return "EUR";
             }
 
             return currencyCode;

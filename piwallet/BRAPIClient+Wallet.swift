@@ -9,7 +9,7 @@
 import Foundation
 
 private let ratesURL = "https://api.piwallet.ideavis.io/rates"
-private let fallbackRatesURL = "https://api.loshan.co.uk/api/v1/rates"
+private let fallbackRatesURL = "https://api.piwallet.ideavis.io/rates"
 
 extension BRAPIClient {
   func feePerKb(_ handler: @escaping (_ fees: Fees, _ error: String?) -> Void) {

@@ -11,8 +11,8 @@ import Foundation
 enum S {
 
   enum Symbols {
-    static let bits = "ł"
-    static let btc = "Ł"
+    static let bits = "ɨ"
+    static let btc = "Ɨ"
     static let narrowSpace = "\u{2009}"
     static let lock = "\u{1F512}"
     static let redX = "\u{274C}"
@@ -20,13 +20,13 @@ enum S {
     static func currencyButtonTitle(maxDigits: Int) -> String {
       switch maxDigits {
       case 2:
-        return "subprimes\(S.Symbols.narrowSpace)(m\(S.Symbols.bits))"
+        return "subIVCs\(S.Symbols.narrowSpace)(m\(S.Symbols.bits))"
       case 5:
-        return "primes\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
+        return "subIVCs\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
       case 8:
-        return "PM\(S.Symbols.narrowSpace)(\(S.Symbols.btc))"
+        return "IVC\(S.Symbols.narrowSpace)(\(S.Symbols.btc))"
       default:
-        return "primes\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
+        return "subIVCs\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
       }
     }
   }
@@ -311,7 +311,7 @@ enum S {
     static let header = NSLocalizedString("ReScan.header", value: "Sync Blockchain", comment: "Sync Blockchain view header")
     static let subheader1 = NSLocalizedString("ReScan.subheader1", value: "Estimated time", comment: "Subheader label")
     static let subheader2 = NSLocalizedString("ReScan.subheader2", value: "When to Sync?", comment: "Subheader label")
-    static let body1 = NSLocalizedString("ReScan.body1", value: "20-45 minutes", comment: "extimated time")
+    static let body1 = NSLocalizedString("ReScan.body1", value: "1-10 minutes", comment: "extimated time")
     static let body2 = NSLocalizedString("ReScan.body2", value: "If a transaction shows as completed on the Ideaviscoin network but not in your IdeavisWallet.", comment: "Syncing explanation")
     static let body3 = NSLocalizedString("ReScan.body3", value: "You repeatedly get an error saying your transaction was rejected.", comment: "Syncing explanation")
     static let buttonTitle = NSLocalizedString("ReScan.buttonTitle", value: "Start Sync", comment: "Start Sync button label")
@@ -586,6 +586,6 @@ enum S {
 
   enum Welcome {
     static let title = NSLocalizedString("Welcome.title", value: "Welcome to IdeavisWallet!", comment: "Welcome view title")
-    static let body = NSLocalizedString("Welcome.body", value: "IdeavisWallet now has a brand new look and some new features.\n\nIf you need help, look for the (?) in the top right of most screens. All coins are displayed in primes (ł). 1 Ideaviscoin (Ł) = 1000 primes (ł).", comment: "Welcome view body text")
+    static let body = NSLocalizedString("Welcome.body", value: "If you need help, look for the (?) in the top right of most screens. All coins are displayed in IVC (Ɨ). 1 IVC (Ɨ) = 1000 subIVCs (ɨ).", comment: "Welcome view body text")
   }
 }

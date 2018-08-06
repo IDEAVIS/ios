@@ -30,7 +30,7 @@ class ModalHeaderView : UIView {
 
         super.init(frame: .zero)
         setupSubviews()
-        addFaqButton()
+//        addFaqButton()
     }
 
     var faqInfo: (Store, String)? {
@@ -38,7 +38,7 @@ class ModalHeaderView : UIView {
             if oldValue == nil {
                 guard let faqInfo = faqInfo else { return }
                 faq = UIButton.buildFaqButton(store: faqInfo.0, articleId: faqInfo.1)
-                addFaqButton()
+//                addFaqButton()
             }
         }
     }

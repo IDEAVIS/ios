@@ -329,7 +329,7 @@ class ModalPresenter : Subscriber, Trackable {
         guard let top = topViewController else { return }
         guard let walletManager = self.walletManager else { return }
         let settingsNav = UINavigationController()
-        let sections = ["Wallet", "Manage", "IdeavisWallet", "Advanced"]
+        let sections = ["Wallet", "Manage", "Advanced"]
         var rows = [
             "Wallet": [Setting(title: S.Settings.importTile, callback: { [weak self] in
                     guard let myself = self else { return }
@@ -403,14 +403,14 @@ class ModalPresenter : Subscriber, Trackable {
                     settingsNav.pushViewController(updatePin, animated: true)
                 })
             ],
-            "IdeavisWallet": [
-                Setting(title: S.Settings.shareData, callback: {
-                    settingsNav.pushViewController(ShareDataViewController(store: self.store), animated: true)
-                }),
-                Setting(title: S.Settings.about, callback: {
-                    settingsNav.pushViewController(AboutViewController(), animated: true)
-                }),
-            ],
+//            "IdeavisWallet": [
+////                Setting(title: S.Settings.shareData, callback: {
+////                    settingsNav.pushViewController(ShareDataViewController(store: self.store), animated: true)
+////                }),
+////                Setting(title: S.Settings.about, callback: {
+////                    settingsNav.pushViewController(AboutViewController(), animated: true)
+////                }),
+//            ],
             "Advanced": [
                 Setting(title: "Advanced", callback: { [weak self] in
                     guard let myself = self else { return }
@@ -435,28 +435,28 @@ class ModalPresenter : Subscriber, Trackable {
             ]
         ]
 
-        if BRAPIClient.featureEnabled(.earlyAccess) {
-            rows["IdeavisWallet"]?.insert(Setting(title: S.Settings.earlyAccess, callback: {
-                settingsNav.dismiss(animated: true, completion: {
-                    self.presentBuyController("/ea")
-                })
-            }), at: 1)
-        }
+//        if BRAPIClient.featureEnabled(.earlyAccess) {
+//            rows["IdeavisWallet"]?.insert(Setting(title: S.Settings.earlyAccess, callback: {
+//                settingsNav.dismiss(animated: true, completion: {
+//                    self.presentBuyController("/ea")
+//                })
+//            }), at: 1)
+//        }
 
-        rows["IdeavisWallet"]?.append( Setting(title: S.Settings.review, callback: {
-                let alert = UIAlertController(title: S.Settings.review, message: S.Settings.enjoying, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: S.Button.no, style: .default, handler: { _ in
-                    self.messagePresenter.presenter = self.topViewController
-                    self.messagePresenter.presentFeedbackCompose()
-                }))
-                alert.addAction(UIAlertAction(title: S.Button.yes, style: .default, handler: { _ in
-                    if let url = URL(string: C.reviewLink) {
-                        UIApplication.shared.openURL(url)
-                    }
-                }))
-                self.topViewController?.present(alert, animated: true, completion: nil)
-            })
-        )
+//        rows["IdeavisWallet"]?.append( Setting(title: S.Settings.review, callback: {
+//                let alert = UIAlertController(title: S.Settings.review, message: S.Settings.enjoying, preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: S.Button.no, style: .default, handler: { _ in
+//                    self.messagePresenter.presenter = self.topViewController
+//                    self.messagePresenter.presentFeedbackCompose()
+//                }))
+//                alert.addAction(UIAlertAction(title: S.Button.yes, style: .default, handler: { _ in
+//                    if let url = URL(string: C.reviewLink) {
+//                        UIApplication.shared.openURL(url)
+//                    }
+//                }))
+//                self.topViewController?.present(alert, animated: true, completion: nil)
+//            })
+//        )
 
         let settings = SettingsViewController(sections: sections, rows: rows)
         settings.addCloseNavigationItem()

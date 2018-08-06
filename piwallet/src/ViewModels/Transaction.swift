@@ -99,7 +99,7 @@ class Transaction {
       nf.currencySymbol = currentRate.currencySymbol
       nf.numberStyle = .currency
       if let rateString = nf.string(from: metaData.exchangeRate as NSNumber) {
-        let secondLine = "\(rateString)/PM \(prefix)\(String(format: "%.2f", difference))%"
+        let secondLine = "\(rateString)/IVC \(prefix)\(String(format: "%.2f", difference))%"
         exchangeRateInfo = "\(firstLine)\n\(secondLine)"
       }
     }
@@ -185,8 +185,7 @@ class Transaction {
   private lazy var startingBalance: UInt64 = {
     switch self.direction {
     case .received:
-      return
-      self.balanceAfter.subtractingReportingOverflow(self.satoshis).0.subtractingReportingOverflow(self.fee).0
+      return self.balanceAfter.subtractingReportingOverflow(self.satoshis).0.subtractingReportingOverflow(self.fee).0
     case .sent:
       return self.balanceAfter.addingReportingOverflow(self.satoshis).0.addingReportingOverflow(self.fee).0
     case .moved:
