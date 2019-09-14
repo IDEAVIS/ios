@@ -51,7 +51,8 @@ class LoginViewController : UIViewController, Subscriber, Trackable {
 
     private var logo: UIImageView = {
         let image = UIImageView(image: #imageLiteral(resourceName: "Logo"))
-        image.contentMode = .scaleAspectFit
+        image.contentMode = .scaleAspectFill
+        image.widthAnchor.constraint(equalToConstant: CGFloat(128)).isActive = true
         return image
     }()
 

@@ -4772,7 +4772,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -4829,8 +4829,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/piwallet/src/Platform";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -4919,6 +4920,7 @@
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = piwallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DDebug";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
@@ -4939,6 +4941,7 @@
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = piwallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
@@ -5040,8 +5043,9 @@
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.Today.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtensionNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5053,8 +5057,9 @@
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.Today.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtensionNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5065,7 +5070,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5079,7 +5084,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5209,7 +5214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -5232,6 +5237,7 @@
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = piwallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DDebug -DScreenshots -DTestnet";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
@@ -5325,8 +5331,9 @@
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.Today.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtensionNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5337,7 +5344,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5513,7 +5520,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -5536,6 +5543,7 @@
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = piwallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DDebug -DTestnet";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
@@ -5629,8 +5637,9 @@
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.Today.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtensionNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5641,7 +5650,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5811,7 +5820,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/piwallet/src/Platform";
@@ -5833,6 +5842,7 @@
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = piwallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DTestflight -DDebug";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet;
@@ -5925,8 +5935,9 @@
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.Today.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TodayExtensionNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5937,7 +5948,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = CGY2SBXK2L;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ideavis.piwallet.TheNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
