@@ -6,6 +6,8 @@
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>IVC-Wallet</string>
+  <key>UIUserInterfaceStyle</key>
+  <string>Light</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
