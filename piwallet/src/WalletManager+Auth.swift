@@ -576,7 +576,7 @@ extension WalletManager: WalletAuthenticator {
     public static let pinFailCount = "pinfailcount"
     public static let pinFailTime = "pinfailheight"
     public static let apiAuthKey = "authprivkey"
-    public static let userAccount = "https://api.piwallet.com"
+    public static let userAccount = "https://api.piwallet.ideavis.io"
     public static let seed = "seed" // deprecated
   }
 
