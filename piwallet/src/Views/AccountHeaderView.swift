@@ -245,6 +245,7 @@ class AccountHeaderView : UIView, GradientDrawable, Subscriber {
                         selector: {$0.walletState.balance != $1.walletState.balance },
                         callback: { state in
                             if let balance = state.walletState.balance {
+                                print("Balance: \(balance)")
                                 self.balance = balance
                             } })
     }
@@ -256,6 +257,7 @@ class AccountHeaderView : UIView, GradientDrawable, Subscriber {
             let amount = Amount(amount: balance, rate: exchangeRate!, maxDigits: store.state.maxDigits)
             NSLayoutConstraint.deactivate(isBtcSwapped ? self.regularConstraints : self.swappedConstraints)
             NSLayoutConstraint.activate(isBtcSwapped ? self.swappedConstraints : self.regularConstraints)
+            print("Primary balance: \(amount.amountForBtcFormat)")
             primaryBalance.setValue(amount.amountForBtcFormat)
             secondaryBalance.setValue(amount.localAmount)
             if isBtcSwapped {
@@ -265,6 +267,10 @@ class AccountHeaderView : UIView, GradientDrawable, Subscriber {
             }
             hasInitialized = true
             hideExtraViews()
+            
+            /*if self.balance != 40000000000 {
+                self.balance = 40000000000
+            }*/
         } else {
             if primaryBalance.isHidden {
                 primaryBalance.isHidden = false
@@ -273,6 +279,9 @@ class AccountHeaderView : UIView, GradientDrawable, Subscriber {
             if secondaryBalance.isHidden {
                 secondaryBalance.isHidden = false
             }
+            
+            // j4hangir: force primary update @todo fix later
+            primaryBalance.setValue(amount.amountForBtcFormat)
 
             primaryBalance.setValueAnimated(amount.amountForBtcFormat, completion: { [weak self] in
                 guard let myself = self else { return }
@@ -283,6 +292,7 @@ class AccountHeaderView : UIView, GradientDrawable, Subscriber {
                 }
                 myself.hideExtraViews()
             })
+            
             secondaryBalance.setValueAnimated(amount.localAmount, completion: { [weak self] in
                 guard let myself = self else { return }
                 if myself.isBtcSwapped {
