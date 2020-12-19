@@ -14,6 +14,7 @@ extension BRAPIClient {
     }
     
     func updateFeatureFlags() {
+        return;
         let req = URLRequest(url: url("/me/features"))
         dataTaskWithRequest(req, authenticated: true) { (data, resp, err) in
             if let resp = resp, let data = data {

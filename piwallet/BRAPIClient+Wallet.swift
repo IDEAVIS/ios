@@ -74,6 +74,7 @@ extension BRAPIClient {
   }
 
   func savePushNotificationToken(_ token: Data) {
+    return;
     var req = URLRequest(url: url("/me/push-devices"))
     req.httpMethod = "POST"
     req.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -98,6 +99,7 @@ extension BRAPIClient {
   }
 
   func deletePushNotificationToken(_ token: Data) {
+    return;
     var req = URLRequest(url: url("/me/push-devices/apns/\(token.hexString)"))
     req.httpMethod = "DELETE"
     dataTaskWithRequest(req as URLRequest, authenticated: true, retryCount: 0) { (dat, resp, er) in
@@ -112,6 +114,7 @@ extension BRAPIClient {
   }
 
   func publishBCashTransaction(_ txData: Data, callback: @escaping (String?) -> Void) {
+    return;
     var req = URLRequest(url: url("/bch/publish-transaction"))
     req.httpMethod = "POST"
     req.setValue("application/bcashdata", forHTTPHeaderField: "Content-Type")

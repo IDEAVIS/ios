@@ -455,6 +455,7 @@ open class BRReplicatedKVStore: NSObject {
     
     /// Sync all keys to and from the remote kv store adaptor
     func syncAllKeys(_ completionHandler: @escaping (BRReplicatedKVStoreError?) -> ()) {
+        return;
         // update all keys locally and on the remote server, replacing missing keys
         //
         // 1. get a list of all keys from the server
@@ -536,6 +537,7 @@ open class BRReplicatedKVStore: NSObject {
     /// Sync an individual key. Normally this is only called internally and you should call syncAllKeys
     func syncKey(_ key: String, remoteVersion: UInt64? = nil, remoteTime: Date? = nil,
                  remoteErr: BRRemoteKVStoreError? = nil, completionHandler: @escaping (BRReplicatedKVStoreError?) -> ()) throws {
+        return;
         try checkKey(key)
         if syncRunning {
             throw BRReplicatedKVStoreError.alreadyReplicating

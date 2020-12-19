@@ -182,6 +182,7 @@ class EventManager {
     }
     
     private func sendToServer(completion: (() -> Void)? = nil) {
+        return;
         queue.addOperation { [weak self] in
             guard let myself = self else { return }
             let dataDirectory = myself.unsentDataDirectory
