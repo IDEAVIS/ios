@@ -77,18 +77,18 @@ extension UserDefaults {
   }
 
   //
-  // 2 - subIVCs
-  // 5 - IVCs
+  // 2 - subIVC
+  // 5 - mIVC (milli-IVC)
   // 8 - IVC
   //
   static var maxDigits: Int {
     get {
       guard defaults.object(forKey: maxDigitsKey) != nil else {
-        return 5
+        return 8
       }
       let maxDigits = defaults.integer(forKey: maxDigitsKey)
       if maxDigits == 5 {
-        return 8 //Convert IVCs to IVC
+        return 8 //Convert mIVC to IVC
       } else {
         return maxDigits
       }

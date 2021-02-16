@@ -20,13 +20,13 @@ enum S {
     static func currencyButtonTitle(maxDigits: Int) -> String {
       switch maxDigits {
       case 2:
-        return "subIVCs\(S.Symbols.narrowSpace)(m\(S.Symbols.bits))"
+        return "subIVC\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
       case 5:
-        return "IVCs\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
+        return "mIVC\(S.Symbols.narrowSpace)(m\(S.Symbols.bits))"
       case 8:
         return "IVC\(S.Symbols.narrowSpace)(\(S.Symbols.btc))"
       default:
-        return "subIVCs\(S.Symbols.narrowSpace)(\(S.Symbols.bits))"
+        return "IVC\(S.Symbols.narrowSpace)(\(S.Symbols.btc))"
       }
     }
   }
@@ -586,6 +586,6 @@ enum S {
 
   enum Welcome {
     static let title = NSLocalizedString("Welcome.title", value: "Welcome to IdeavisWallet!", comment: "Welcome view title")
-    static let body = NSLocalizedString("Welcome.body", value: "If you need help, look for the (?) in the top right of most screens. All coins are displayed in IVC (Ɨ).\n1 IVC (Ɨ) = 1000 subIVCs (ɨ).", comment: "Welcome view body text")
+    static let body = NSLocalizedString("Welcome.body", value: "If you need help, look for the (?) in the top right of most screens. All coins are displayed in IVC (Ɨ).\n1 IVC (Ɨ) = 1000 mIVC (ɨ).", comment: "Welcome view body text")
   }
 }
