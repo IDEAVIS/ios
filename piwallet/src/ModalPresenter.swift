@@ -421,6 +421,9 @@ class ModalPresenter : Subscriber, Trackable {
                             Setting(title: "Ideaviscoin Nodes", callback: {
                                 let nodeSelector = NodeSelectorViewController(walletManager: walletManager)
                                 settingsNav.pushViewController(nodeSelector, animated: true)
+                            }),
+                            Setting(title: "!! Wipe Wallet !!",callback: {
+                                myself.wipeWallet()
                             })
 //                            Setting(title: S.BCH.title, callback: {
 //                                let bCash = BCashTransactionViewController(walletManager: walletManager, store: myself.store)

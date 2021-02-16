@@ -533,6 +533,7 @@ protocol BRPeerManagerListener {
 class BRPeerManager {
     let cPtr: OpaquePointer
     let listener: BRPeerManagerListener
+    static var wipingWallet = false
     
     init?(wallet: BRWallet, earliestKeyTime: TimeInterval, blocks: [BRBlockRef?], peers: [BRPeer],
           listener: BRPeerManagerListener) {
@@ -580,6 +581,7 @@ class BRPeerManager {
     
     // connect to bitcoin peer-to-peer network (also call this whenever networkIsReachable() status changes)
     func connect() {
+        if BRPeerManager.wipingWallet {return}
         if let fixedAddress = UserDefaults.customNodeIP {
             setFixedPeer(address: fixedAddress, port: UserDefaults.customNodePort ?? C.standardPort)
         }
