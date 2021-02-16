@@ -586,6 +586,6 @@ enum S {
 
   enum Welcome {
     static let title = NSLocalizedString("Welcome.title", value: "Welcome to IdeavisWallet!", comment: "Welcome view title")
-    static let body = NSLocalizedString("Welcome.body", value: "If you need help, look for the (?) in the top right of most screens. All coins are displayed in IVC (Ɨ). 1 IVC (Ɨ) = 1000 subIVCs (ɨ).", comment: "Welcome view body text")
+    static let body = NSLocalizedString("Welcome.body", value: "If you need help, look for the (?) in the top right of most screens. All coins are displayed in IVC (Ɨ).\n1 IVC (Ɨ) = 1000 subIVCs (ɨ).", comment: "Welcome view body text")
   }
 }

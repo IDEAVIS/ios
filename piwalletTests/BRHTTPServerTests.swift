@@ -39,7 +39,7 @@ class BRHTTPServerTests: XCTestCase {
                 XCTFail("error downloading file")
             }
         }
-        download("https://s3.amazonaws.com/piwallet-assets/bread-buy/bundle.tar",
+        download("https://s3.amazonaws.com/piwallet-assets/Ideavis-buy/bundle.tar",
                  resultingUrl: &bundle1Url, resultingData: &bundle1Data)
         
         server = BRHTTPServer()
