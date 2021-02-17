@@ -513,7 +513,8 @@ extension WalletManager: WalletAuthenticator {
         print("FileManager")
         try? FileManager.default.removeItem(atPath: dbPath)
         try? FileManager.default.removeItem(at: BRReplicatedKVStore.dbPath)
-        print("BRAPIClent")
+        print("BRAPIClient")
+
       try BRAPIClient(authenticator: self).kv?.rmdb()
     
       NotificationCenter.default.post(name: .WalletDidWipe, object: nil)
